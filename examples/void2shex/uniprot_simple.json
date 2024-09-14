@@ -1,0 +1,2263 @@
+{
+  "shapes": [
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Structured_Name"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/fullName",
+        "http://purl.uniprot.org/core/cdAntigenName",
+        "http://purl.uniprot.org/core/shortName",
+        "http://purl.uniprot.org/core/ecName",
+        "http://purl.uniprot.org/core/allergenName",
+        "http://purl.uniprot.org/core/internationalNonproprietaryName"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Zinc_Finger_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Chain_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/mass",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Nucleotide_Resource"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequenceDiscrepancy",
+        "http://purl.uniprot.org/core/locatedOn",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/database"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/External_Sequence"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/precursor",
+        "http://purl.uniprot.org/core/translatedFrom",
+        "http://purl.uniprot.org/core/modification",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/mass",
+        "http://purl.uniprot.org/core/basedOn",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.uniprot.org/core/fragment",
+        "http://purl.uniprot.org/core/replaces",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/version",
+        "http://purl.uniprot.org/core/md5Checksum"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Interaction"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/participant",
+        "http://purl.uniprot.org/core/experiments",
+        "http://purl.uniprot.org/core/xeno"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLConstructExecutable"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/shacl#prefixes",
+        "https://schema.org/target",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/ns/shacl#construct"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Peptide_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/mass"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Concept"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/category",
+        "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "http://www.w3.org/2004/02/skos/core#narrower",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2004/02/skos/core#altLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Database"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/abbreviation",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/linkIsExplicit",
+        "http://purl.uniprot.org/core/category",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://purl.uniprot.org/core/urlTemplate",
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/citation"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/database",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports",
+        "http://www.w3.org/ns/shacl#declare",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Sequence_Conflict_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/substitution",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Plasmid"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#range",
+        "http://www.w3.org/2000/01/rdf-schema#domain"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Region_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/PTM_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#NamedIndividual"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Citation_Statement"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/attribution",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "http://purl.uniprot.org/core/scope",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "http://purl.uniprot.org/core/context"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Transposon"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Resource"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/signatureSequenceMatch",
+        "http://purl.uniprot.org/core/database",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/translatedFrom"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
+      "predicates": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "http://purl.uniprot.org/core/attribution",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/scope",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "http://purl.uniprot.org/core/context"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#InRangePosition"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#reference",
+        "http://biohackathon.org/resource/faldo#end",
+        "http://biohackathon.org/resource/faldo#begin"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Erroneous_Initiation_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Representative_Proteome"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/organism",
+        "http://busco.ezlab.org/schema#has_score",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/exclusionReason",
+        "http://purl.uniprot.org/core/panproteome",
+        "http://www.w3.org/2004/02/skos/core#narrower",
+        "http://www.w3.org/2004/02/skos/core#closeMatch",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/strain",
+        "http://purl.org/dc/terms/modified",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Gene"
+      ],
+      "predicates": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Graph"
+      ],
+      "predicates": [
+        "http://ldf.fi/void-ext#distinctLiterals",
+        "http://ldf.fi/void-ext#distinctIRIReferenceSubjects",
+        "http://ldf.fi/void-ext#distinctIRIReferenceObjects",
+        "http://rdfs.org/ns/void#distinctObjects",
+        "http://rdfs.org/ns/void#propertyPartition",
+        "http://rdfs.org/ns/void#classPartition",
+        "http://rdfs.org/ns/void#classes",
+        "http://ldf.fi/void-ext#distinctBlankNodeSubjects",
+        "http://rdfs.org/ns/void#triples",
+        "http://rdfs.org/ns/void#distinctSubjects",
+        "http://purl.org/dc/terms/issued",
+        "http://purl.org/dc/terms/title",
+        "http://purl.org/dc/terms/license"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLExecutable"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/shacl#select",
+        "https://schema.org/potentialAction",
+        "https://schema.org/keyword",
+        "http://www.w3.org/ns/shacl#describe",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/ns/shacl#construct",
+        "http://www.w3.org/ns/shacl#ask",
+        "http://www.w3.org/ns/shacl#prefixes",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "https://schema.org/target"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#onProperty",
+        "http://www.w3.org/2002/07/owl#someValuesFrom"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Biotechnology_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+      ],
+      "predicates": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Book_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/editor",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.uniprot.org/core/group",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/pages",
+        "http://purl.uniprot.org/core/publisher",
+        "http://purl.uniprot.org/core/volume",
+        "http://purl.uniprot.org/core/place"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Citation_Statement"
+      ],
+      "predicates": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "http://purl.uniprot.org/core/attribution",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "http://purl.uniprot.org/core/mappedAnnotation",
+        "http://purl.uniprot.org/core/scope"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Cluster"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/member",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/identity",
+        "http://purl.uniprot.org/core/someMembersClassifiedWith",
+        "http://purl.uniprot.org/core/commonTaxon"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#ExactPosition"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#reference",
+        "http://biohackathon.org/resource/faldo#position"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Transcript_Resource"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#sameAs",
+        "http://purl.uniprot.org/core/translatedTo",
+        "http://purl.uniprot.org/core/database",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/transcribedFrom",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Lipidation_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Frameshift_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/conflictingSequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#Position"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#reference",
+        "http://biohackathon.org/resource/faldo#end",
+        "http://biohackathon.org/resource/faldo#begin",
+        "http://biohackathon.org/resource/faldo#possiblePosition",
+        "http://biohackathon.org/resource/faldo#position"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Site_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Submission_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/group",
+        "http://purl.uniprot.org/core/submittedTo",
+        "http://purl.uniprot.org/core/author"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Transit_Peptide_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Intramembrane_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Toxic_Dose_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Compositional_Bias_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Strain"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/name"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Alternative_Sequence_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/substitution",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Structured_Name"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/structuredNameType"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Kinetics_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/measuredAffinity",
+        "http://purl.uniprot.org/core/measuredActivity",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Pathway_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Alternative_Promoter_Usage_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Topological_Domain_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Tissue"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Patent_Citation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/author"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Erroneous_Termination_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/RNA_Editing_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/frameshift",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://biohackathon.org/resource/faldo#location",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Protein"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/reviewed",
+        "http://purl.uniprot.org/core/replacedBy",
+        "http://purl.uniprot.org/core/created",
+        "http://purl.uniprot.org/core/obsolete",
+        "http://purl.uniprot.org/core/version",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/withdrawnFromINSDC",
+        "http://purl.uniprot.org/core/mnemonic",
+        "http://purl.uniprot.org/core/oldMnemonic"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Gene"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/orfName",
+        "http://purl.uniprot.org/core/locusName",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Strain"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Transmembrane_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://xmlns.com/foaf/0.1/Image"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/width",
+        "http://purl.uniprot.org/core/height"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Orientation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/alias",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Reference_Proteome"
+      ],
+      "predicates": [
+        "http://purl.org/dc/terms/modified",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/strain",
+        "http://purl.uniprot.org/core/panproteome",
+        "http://www.w3.org/2004/02/skos/core#narrower",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/organism",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2004/02/skos/core#closeMatch",
+        "http://busco.ezlab.org/schema#has_score"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Sequence_Caution_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Topology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2002/07/owl#sameAs",
+        "http://purl.uniprot.org/core/alias",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://purl.uniprot.org/core/relatedLocation"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Modified_Residue_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#onProperty",
+        "http://www.w3.org/2002/07/owl#maxCardinality",
+        "http://www.w3.org/2002/07/owl#allValuesFrom",
+        "http://www.w3.org/2002/07/owl#minCardinality",
+        "http://www.w3.org/2002/07/owl#cardinality",
+        "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+        "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
+        "http://www.w3.org/2002/07/owl#hasValue",
+        "http://www.w3.org/2002/07/owl#onClass",
+        "http://www.w3.org/2002/07/owl#someValuesFrom"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/scope",
+        "http://purl.uniprot.org/core/mappedAnnotation",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "http://purl.uniprot.org/core/attribution",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Disease_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/disease",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#inverseOf"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2000/01/rdf-schema#Class"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Propeptide_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Caution_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Domain_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Induction_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Part"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/enzyme",
+        "http://purl.uniprot.org/core/recommendedName",
+        "http://purl.uniprot.org/core/alternativeName"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://purl.org/dc/terms/license",
+        "http://purl.org/dc/terms/abstract",
+        "http://www.w3.org/2002/07/owl#imports",
+        "http://purl.org/dc/terms/title",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2002/07/owl#versionInfo",
+        "http://purl.org/vocab/vann/preferredNamespacePrefix",
+        "http://purl.org/dc/terms/description",
+        "http://purl.org/ontology/bibo/status",
+        "https://w3id.org/widoco/vocab#introduction",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Journal_Citation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://purl.uniprot.org/core/pages",
+        "http://purl.uniprot.org/core/group",
+        "http://purl.uniprot.org/core/volume",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/date",
+        "http://xmlns.com/foaf/0.1/primaryTopicOf"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Mutagenesis_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/substitution",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Sequence"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/seedFor",
+        "http://purl.uniprot.org/core/representativeFor",
+        "http://purl.uniprot.org/core/organism",
+        "http://purl.uniprot.org/core/length",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://purl.uniprot.org/core/memberOf",
+        "http://purl.uniprot.org/core/sequenceFor"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/database",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Electronic_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/name",
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/locator",
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/date"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Service"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+        "http://www.w3.org/ns/sparql-service-description#resultFormat",
+        "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+        "http://www.w3.org/ns/sparql-service-description#feature",
+        "http://www.w3.org/ns/sparql-service-description#endpoint"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Proteome"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/redundantTo",
+        "http://purl.uniprot.org/core/organism",
+        "http://purl.uniprot.org/core/exclusionReason",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2004/02/skos/core#narrower",
+        "http://busco.ezlab.org/schema#has_score",
+        "http://purl.uniprot.org/core/panproteome",
+        "http://purl.uniprot.org/core/citation",
+        "http://purl.uniprot.org/core/strain",
+        "http://purl.org/dc/terms/modified",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Alternative_Initiation_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Simple_Sequence"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/mass",
+        "http://purl.uniprot.org/core/version",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/md5Checksum",
+        "http://purl.uniprot.org/core/replaces",
+        "http://purl.uniprot.org/core/fragment",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.uniprot.org/core/precursor",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Disease"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/mnemonic",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Participant"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#sameAs",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Coiled_Coil_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Book_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/pages",
+        "http://purl.uniprot.org/core/author"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#TransitiveProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#inverseOf"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Cofactor_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/cofactor",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Unknown_Sequence"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/name"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Sequence_Uncertainty_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#ExactPosition"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#position",
+        "http://biohackathon.org/resource/faldo#reference"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Modified_Sequence"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/name",
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "http://purl.uniprot.org/core/replaces",
+        "http://purl.uniprot.org/core/basedOn",
+        "http://purl.uniprot.org/core/modification"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#FunctionalProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#range",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#domain"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Alternative_Splicing_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Book_Citation"
+      ],
+      "predicates": [
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/place",
+        "http://purl.uniprot.org/core/group",
+        "http://purl.uniprot.org/core/volume",
+        "http://purl.uniprot.org/core/publisher",
+        "http://purl.uniprot.org/core/pages",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/editor",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.uniprot.org/core/date"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Submission_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/submittedTo",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/group"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Helix_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLAskExecutable"
+      ],
+      "predicates": [
+        "https://schema.org/target",
+        "http://www.w3.org/ns/shacl#ask",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/ns/shacl#prefixes"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#Region"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#end",
+        "http://biohackathon.org/resource/faldo#begin"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Non-adjacent_Residues_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Journal_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/group",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://xmlns.com/foaf/0.1/primaryTopicOf",
+        "http://purl.uniprot.org/core/authorsIncomplete",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.uniprot.org/core/volume",
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://purl.uniprot.org/core/pages"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Citation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://xmlns.com/foaf/0.1/primaryTopicOf",
+        "http://purl.org/dc/terms/identifier"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Restriction"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#onProperty",
+        "http://www.w3.org/2002/07/owl#someValuesFrom"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Member_Of_Redudant_Proteome"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/reviewed",
+        "http://purl.uniprot.org/core/version",
+        "http://purl.uniprot.org/core/obsolete",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/mnemonic",
+        "http://purl.uniprot.org/core/replacedBy",
+        "http://purl.uniprot.org/core/created"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Structure_Determination_Method"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Developmental_Stage_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Natural_Variant_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2004/02/skos/core#related",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/substitution",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Axiom"
+      ],
+      "predicates": [
+        "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+        "http://www.w3.org/2002/07/owl#annotatedTarget",
+        "http://www.w3.org/2002/07/owl#annotatedProperty",
+        "http://www.w3.org/2002/07/owl#annotatedSource"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Status"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Turn_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Temperature_Dependence_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Pharmaceutical_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Active_Site_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Thing"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Erroneous_Gene_Model_Prediction_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Initiator_Methionine_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Signal_Peptide_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Mass_Spectrometry_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/method",
+        "http://purl.uniprot.org/core/measuredError",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/measuredValue"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Thesis_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/institution",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/place"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Mass_Measurement_Method"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Dataset"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/sparql-service-description#namedGraph",
+        "http://purl.org/pav/version",
+        "http://purl.org/dc/terms/issued",
+        "http://www.w3.org/ns/sparql-service-description#defaultGraph"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Nucleotide_Binding_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#OneOfPosition"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#possiblePosition",
+        "http://biohackathon.org/resource/faldo#reference"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Sequence"
+      ],
+      "predicates": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "http://purl.uniprot.org/core/sequenceFor",
+        "http://purl.uniprot.org/core/md5Checksum",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Catalytic_Activity"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Non-standard_Residue_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Journal_Citation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/erratum",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/pages",
+        "http://purl.uniprot.org/core/volume",
+        "http://xmlns.com/foaf/0.1/primaryTopicOf",
+        "http://purl.uniprot.org/core/name",
+        "http://purl.org/dc/terms/identifier",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/group"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Redox_Potential_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Binding_Site_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/ligandPart",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/ligand"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Similarity_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Non-terminal_Residue_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Cellular_Component"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/relatedLocation",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://purl.uniprot.org/core/alias",
+        "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "http://purl.uniprot.org/core/citation",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/partOf",
+        "http://www.w3.org/2002/07/owl#sameAs"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Non_Self_Interaction"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/participant",
+        "http://purl.uniprot.org/core/xeno",
+        "http://purl.uniprot.org/core/experiments"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Subcellular_Location_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/locatedIn",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Glycosylation_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Ribosomal_Frameshifting"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#AllDifferent"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#distinctMembers"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLSelectExecutable"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/shacl#describe",
+        "http://www.w3.org/ns/shacl#select",
+        "https://schema.org/target",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/ns/shacl#prefixes",
+        "https://schema.org/keyword",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "https://schema.org/potentialAction"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Rank"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Citation"
+      ],
+      "predicates": [
+        "http://xmlns.com/foaf/0.1/primaryTopicOf",
+        "http://purl.org/dc/terms/identifier",
+        "http://www.w3.org/2004/02/skos/core#exactMatch"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Polymorphism_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Submission_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/submittedTo",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/group"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Function_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#deprecated",
+        "http://www.w3.org/2000/01/rdf-schema#domain",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "http://www.w3.org/2000/01/rdf-schema#range",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Catalytic_Activity"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/catalyzedReaction",
+        "http://purl.uniprot.org/core/enzymeClass",
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Structure_Resource"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/database",
+        "http://purl.uniprot.org/core/resolution",
+        "http://purl.uniprot.org/core/chainSequenceMapping",
+        "http://purl.uniprot.org/core/method"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2002/07/owl#inverseOf",
+        "http://www.w3.org/2000/01/rdf-schema#range",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2000/01/rdf-schema#domain",
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2002/07/owl#deprecated"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Motif_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Citation"
+      ],
+      "predicates": [
+        "http://xmlns.com/foaf/0.1/primaryTopicOf",
+        "http://purl.org/dc/terms/identifier",
+        "http://www.w3.org/2004/02/skos/core#exactMatch"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Taxon"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/obsolete",
+        "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+        "http://purl.uniprot.org/core/replacedBy",
+        "http://purl.uniprot.org/core/rank",
+        "http://purl.uniprot.org/core/synonym",
+        "http://purl.uniprot.org/core/commonName",
+        "http://purl.uniprot.org/core/scientificName",
+        "http://purl.uniprot.org/core/partOfLineage",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://purl.uniprot.org/core/host",
+        "http://purl.uniprot.org/core/otherName",
+        "http://xmlns.com/foaf/0.1/depiction",
+        "http://purl.uniprot.org/core/mnemonic",
+        "http://purl.uniprot.org/core/strain",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/replaces"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Cross-link_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/name",
+        "http://purl.obolibrary.org/obo/chebi/inchi",
+        "http://www.geneontology.org/formats/oboInOwl#inSubset",
+        "http://purl.obolibrary.org/obo/chebi/formula",
+        "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+        "http://purl.obolibrary.org/obo/chebi/smiles",
+        "http://purl.obolibrary.org/obo/IAO_0000115",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://purl.obolibrary.org/obo/chebi/inchikey",
+        "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+        "http://www.geneontology.org/formats/oboInOwl#hasId",
+        "http://purl.obolibrary.org/obo/chebi/charge"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Protein_Existence"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Tissue_Specificity_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Organelle"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2002/07/owl#intersectionOf",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2002/07/owl#unionOf",
+        "http://www.w3.org/2002/07/owl#deprecated",
+        "http://www.w3.org/2002/07/owl#disjointWith",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2002/07/owl#equivalentClass",
+        "http://purl.org/vocab/vann/exaple",
+        "http://www.w3.org/2002/07/owl#oneOf",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Disruption_Phenotype_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Strain"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/name"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Domain_Extent_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Absorption_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/maximum",
+        "http://purl.uniprot.org/core/certain",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://purl.obolibrary.org/obo/IAO_0000115",
+        "http://www.geneontology.org/formats/oboInOwl#replaces",
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Enzyme"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/replaces",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "http://purl.uniprot.org/core/obsolete",
+        "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+        "http://purl.uniprot.org/core/replacedBy",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/activity",
+        "http://purl.uniprot.org/core/citation",
+        "http://www.w3.org/2004/02/skos/core#narrowerTransitive"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Observation_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/group",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/date"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Protein"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/component",
+        "http://purl.uniprot.org/core/enzyme",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/modified",
+        "http://purl.uniprot.org/core/domain",
+        "http://purl.uniprot.org/core/existence",
+        "http://purl.uniprot.org/core/alternativeName",
+        "http://purl.uniprot.org/core/reviewed",
+        "http://purl.uniprot.org/core/attribution",
+        "http://purl.uniprot.org/core/encodedIn",
+        "http://purl.uniprot.org/core/submittedName",
+        "http://purl.uniprot.org/core/oldMnemonic",
+        "http://purl.uniprot.org/core/potentialSequence",
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://purl.uniprot.org/core/organism",
+        "http://purl.uniprot.org/core/proteome",
+        "http://purl.uniprot.org/core/recommendedName",
+        "http://purl.uniprot.org/core/mnemonic",
+        "http://purl.uniprot.org/core/created",
+        "http://purl.uniprot.org/core/interaction",
+        "http://purl.uniprot.org/core/complete",
+        "http://purl.uniprot.org/core/classifiedWith",
+        "http://purl.uniprot.org/core/version",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.uniprot.org/core/isolatedFrom",
+        "http://purl.uniprot.org/core/encodedBy",
+        "http://purl.uniprot.org/core/annotation",
+        "http://purl.uniprot.org/core/replaces",
+        "http://purl.uniprot.org/core/citation"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Disulfide_Bond_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://biohackathon.org/resource/faldo#Region"
+      ],
+      "predicates": [
+        "http://biohackathon.org/resource/faldo#begin",
+        "http://biohackathon.org/resource/faldo#end"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2000/01/rdf-schema#Datatype"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#oneOf"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.obolibrary.org/obo/STATO_0000193"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Self_Interaction"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/xeno",
+        "http://purl.uniprot.org/core/experiments",
+        "http://purl.uniprot.org/core/participant"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Subunit_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Beta_Strand_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.org/ontology/bibo/Journal"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/shortCoden",
+        "http://purl.org/ontology/bibo/shortTitle",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.org/ontology/bibo/title",
+        "http://purl.org/dc/terms/publisher",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://purl.org/ontology/bibo/issn",
+        "http://purl.org/ontology/bibo/eissn",
+        "http://purl.org/ontology/bibo/coden",
+        "http://www.w3.org/2004/02/skos/core#exactMatch",
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Activity_Regulation_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Proteome_Component"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Catalytic_Activity_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/catalyticActivity",
+        "http://purl.uniprot.org/core/sequence",
+        "http://purl.uniprot.org/core/catalyzedPhysiologicalReaction"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://busco.ezlab.org/schema#Score"
+      ],
+      "predicates": [
+        "http://busco.ezlab.org/schema#completeMulti",
+        "http://busco.ezlab.org/schema#fragmented",
+        "http://busco.ezlab.org/schema#missing",
+        "http://busco.ezlab.org/schema#complete",
+        "http://busco.ezlab.org/schema#completeSingle",
+        "http://busco.ezlab.org/schema#referenceDataset"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Thesis_Citation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/place",
+        "http://purl.uniprot.org/core/date",
+        "http://purl.uniprot.org/core/title",
+        "http://purl.uniprot.org/core/author",
+        "http://purl.uniprot.org/core/institution"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Tissue"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Erroneous_Translation_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/conflictingSequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Pathway"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2004/02/skos/core#narrower"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Allergen_Annotation"
+      ],
+      "predicates": [
+        "http://purl.uniprot.org/core/sequence",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/Repeat_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/range"
+      ]
+    },
+    {
+      "class": [
+        "http://purl.uniprot.org/core/PH_Dependence_Annotation"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://purl.uniprot.org/core/sequence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+prefix : <https://sparql.uniprot.org/sparql/> 
+prefix dcterms: <http://purl.org/dc/terms/> 
+prefix foaf: <http://xmlns.com/foaf/0.1/> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix pav: <http://purl.org/pav/> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix void: <http://rdfs.org/ns/void#> 
+prefix void_ext: <http://ldf.fi/void-ext#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix formats: <http://www.w3.org/ns/formats/>
+
+:Service {
+  a [ sd:Service ] ;
+  sd:defaultDataset @:Dataset ;
+  sd:endpoint . ;
+  sd:resultFormat [ formats:~ ] * ;
+  sd:supportedLanguage [ sd:SPARQL11Query ] ;
+  sd:feature [ sd:UnionDefaultGraph sd:BasicFederatedQuery ] * ;
+}
+
+:Dataset {
+    a [ sd:Dataset ] ;
+    sd:defaultGraph @:DefaultGraph ;
+    pav:version xsd:string ;
+    dcterms:issued xsd:date ;
+    sd:namedGraph @:Graph *
+}
+
+:DefaultGraph IRI {
+    a [ sd:Graph ] ;
+    void:triples xsd:long ;
+    dcterms:title xsd:string ;
+    dcterms:issued xsd:date 
+}
+
+:Graph {
+    sd:graph @:Void ;
+    sd:name IRI ;
+    dcterms:title xsd:string ;
+    void:vocabulary IRI *
+}
+
+:Void {}

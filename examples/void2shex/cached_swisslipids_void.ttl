@@ -1,0 +1,902 @@
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX pav:      <http://purl.org/pav/>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX void:     <http://rdfs.org/ns/void#>
+PREFIX void_ext: <http://ldf.fi/void-ext#>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!target>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "22"^^xsd:long;
+        void:property          <https://schema.org/target>;
+        void:triples           "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!select>
+        void:distinctObjects   "22"^^xsd:long;
+        void:distinctSubjects  "22"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#select>;
+        void:triples           "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!prefixes>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "22"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#prefixes>;
+        void:triples           "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!prefix>
+        void:distinctObjects   "68"^^xsd:long;
+        void:distinctSubjects  "68"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#prefix>;
+        void:triples           "68"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!namespace>
+        void:distinctObjects   "66"^^xsd:long;
+        void:distinctSubjects  "67"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#namespace>;
+        void:triples           "67"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!namesapce>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#namesapce>;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!declare>
+        void:distinctObjects   "68"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/shacl#declare>;
+        void:triples           "68"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!imports>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          owl:imports;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!label>
+        void:distinctObjects   "17"^^xsd:long;
+        void:distinctSubjects  "17"^^xsd:long;
+        void:property          rdfs:label;
+        void:triples           "17"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!comment>
+        void:distinctObjects   "23"^^xsd:long;
+        void:distinctSubjects  "23"^^xsd:long;
+        void:property          rdfs:comment;
+        void:triples           "23"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!type>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "23"^^xsd:long;
+        void:property          rdf:type;
+        void:triples           "45"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!target>
+        void:property  <https://schema.org/target>;
+        void:triples   "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!select>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!selectsparql-examples!string>;
+        void:property               <http://www.w3.org/ns/shacl#select>;
+        void:triples                "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!prefixessparql-examples!Ontology>
+        void:class  owl:Ontology .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!prefixes>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!prefixessparql-examples!Ontology>;
+        void:property        <http://www.w3.org/ns/shacl#prefixes>;
+        void:triples         "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!label>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!labelsparql-examples!langString>;
+        void:property               rdfs:label;
+        void:triples                "17"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!comment>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!commentsparql-examples!langString>;
+        void:property               rdfs:comment;
+        void:triples                "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutable>
+        void:class              <http://www.w3.org/ns/shacl#SPARQLSelectExecutable>;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!target> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!select> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!prefixes> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!label> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutablesparql-examples!comment> .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!target>
+        void:property  <https://schema.org/target>;
+        void:triples   "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!selectsparql-examples!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!select>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!selectsparql-examples!string>;
+        void:property               <http://www.w3.org/ns/shacl#select>;
+        void:triples                "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!prefixessparql-examples!Ontology>
+        void:class  owl:Ontology .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!prefixes>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!prefixessparql-examples!Ontology>;
+        void:property        <http://www.w3.org/ns/shacl#prefixes>;
+        void:triples         "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!labelsparql-examples!langString>
+        void_ext:datatype  rdf:langString .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!label>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!labelsparql-examples!langString>;
+        void:property               rdfs:label;
+        void:triples                "17"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!commentsparql-examples!langString>
+        void_ext:datatype  rdf:langString .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!comment>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!commentsparql-examples!langString>;
+        void:property               rdfs:comment;
+        void:triples                "22"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutable>
+        void:class              <http://www.w3.org/ns/shacl#SPARQLExecutable>;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!target> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!select> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!prefixes> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!label> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutablesparql-examples!comment> .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!declare>
+        void:property  <http://www.w3.org/ns/shacl#declare>;
+        void:triples   "68"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!imports>
+        void:property  owl:imports;
+        void:triples   "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!commentsparql-examples!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!comment>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!commentsparql-examples!string>;
+        void:property               rdfs:comment;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontology>
+        void:class              owl:Ontology;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!declare> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!imports> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontologysparql-examples!comment> .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples>
+        rdf:type                   <http://www.w3.org/ns/sparql-service-description#Graph>;
+        void_ext:distinctLiterals  "197"^^xsd:long;
+        dcterms:license            <http://creativecommons.org/licenses/by/4.0/>;
+        void:classPartition        <https://sparql.swisslipids.org/.well-known/void#sparql-examples!Ontology> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLExecutable> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!SPARQLSelectExecutable>;
+        void:classes               "3"^^xsd:long;
+        void:distinctObjects       "197"^^xsd:long;
+        void:propertyPartition     <https://sparql.swisslipids.org/.well-known/void#sparql-examples!target> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!select> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!type> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!comment> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!label> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!imports> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!declare> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!namesapce> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!namespace> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!prefix> , <https://sparql.swisslipids.org/.well-known/void#sparql-examples!prefixes>;
+        void:triples               "356"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/sparql-examples>
+        dcterms:creator    <https://www.uniprot.org/help/about#SIB>;
+        dcterms:publisher  <https://www.uniprot.org/help/about#SIB>;
+        dcterms:title      "SwissLipids sparql-examples";
+        <http://www.w3.org/ns/sparql-service-description#graph>
+                <https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples>;
+        <http://www.w3.org/ns/sparql-service-description#name>
+                <https://sparql.swisslipids.org/.well-known/sparql-examples> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!primaryTopicOf>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          foaf:primaryTopicOf;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!supportedLanguage>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#supportedLanguage>;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!resultFormat>
+        void:distinctObjects   "7"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#resultFormat>;
+        void:triples           "7"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!namedGraph>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#namedGraph>;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!name>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#name>;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!graph>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#graph>;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!feature>
+        void:distinctObjects   "2"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#feature>;
+        void:triples           "2"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!endpoint>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#endpoint>;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!defaultGraph>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#defaultGraph>;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!defaultDataset>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          <http://www.w3.org/ns/sparql-service-description#defaultDataset>;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!type>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "6"^^xsd:long;
+        void:property          rdf:type;
+        void:triples           "6"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!triples>
+        void:distinctObjects   "41"^^xsd:long;
+        void:distinctSubjects  "127"^^xsd:long;
+        void:property          void:triples;
+        void:triples           "127"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!propertyPartition>
+        void:distinctObjects   "123"^^xsd:long;
+        void:distinctSubjects  "14"^^xsd:long;
+        void:property          void:propertyPartition;
+        void:triples           "123"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!property>
+        void:distinctObjects   "60"^^xsd:long;
+        void:distinctSubjects  "123"^^xsd:long;
+        void:property          void:property;
+        void:triples           "123"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctSubjects>
+        void:distinctObjects   "37"^^xsd:long;
+        void:distinctSubjects  "68"^^xsd:long;
+        void:property          void:distinctSubjects;
+        void:triples           "68"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctObjects>
+        void:distinctObjects   "37"^^xsd:long;
+        void:distinctSubjects  "69"^^xsd:long;
+        void:property          void:distinctObjects;
+        void:triples           "69"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!classes>
+        void:distinctObjects   "2"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          void:classes;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!classPartition>
+        void:distinctObjects   "19"^^xsd:long;
+        void:distinctSubjects  "11"^^xsd:long;
+        void:property          void:classPartition;
+        void:triples           "19"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!class>
+        void:distinctObjects   "10"^^xsd:long;
+        void:distinctSubjects  "19"^^xsd:long;
+        void:property          void:class;
+        void:triples           "19"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!version>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          pav:version;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!title>
+        void:distinctObjects   "4"^^xsd:long;
+        void:distinctSubjects  "4"^^xsd:long;
+        void:property          dcterms:title;
+        void:triples           "4"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!publisher>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          dcterms:publisher;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!license>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          dcterms:license;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!issued>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "2"^^xsd:long;
+        void:property          dcterms:issued;
+        void:triples           "2"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!creator>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          dcterms:creator;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctLiterals>
+        void:distinctObjects   "4"^^xsd:long;
+        void:distinctSubjects  "4"^^xsd:long;
+        void:property          void_ext:distinctLiterals;
+        void:triples           "4"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceSubjects>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          void_ext:distinctIRIReferenceSubjects;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceObjects>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          void_ext:distinctIRIReferenceObjects;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctBlankNodeSubjects>
+        void:distinctObjects   "2"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          void_ext:distinctBlankNodeSubjects;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!datatypePartition>
+        void:distinctObjects   "25"^^xsd:long;
+        void:distinctSubjects  "32"^^xsd:long;
+        void:property          void_ext:datatypePartition;
+        void:triples           "32"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!datatype>
+        void:distinctObjects   "5"^^xsd:long;
+        void:distinctSubjects  "25"^^xsd:long;
+        void:property          void_ext:datatype;
+        void:triples           "25"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!supportedLanguage>
+        void:property  <http://www.w3.org/ns/sparql-service-description#supportedLanguage>;
+        void:triples   "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!resultFormat>
+        void:property  <http://www.w3.org/ns/sparql-service-description#resultFormat>;
+        void:triples   "7"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!feature>
+        void:property  <http://www.w3.org/ns/sparql-service-description#feature>;
+        void:triples   "2"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!endpointvoid!Service>
+        void:class  <http://www.w3.org/ns/sparql-service-description#Service> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!endpoint>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!endpointvoid!Service>;
+        void:property        <http://www.w3.org/ns/sparql-service-description#endpoint>;
+        void:triples         "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!defaultDatasetvoid!Dataset>
+        void:class  <http://www.w3.org/ns/sparql-service-description#Dataset> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!defaultDataset>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!defaultDatasetvoid!Dataset>;
+        void:property        <http://www.w3.org/ns/sparql-service-description#defaultDataset>;
+        void:triples         "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Service>
+        void:class              <http://www.w3.org/ns/sparql-service-description#Service>;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!supportedLanguage> , <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!resultFormat> , <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!feature> , <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!endpoint> , <https://sparql.swisslipids.org/.well-known/void#void!Servicevoid!defaultDataset> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!triplesvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!triples>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!triplesvoid!long>;
+        void:property               void:triples;
+        void:triples                "4"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!propertyPartition>
+        void:property  void:propertyPartition;
+        void:triples   "65"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctSubjectsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctSubjects>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctSubjectsvoid!long>;
+        void:property               void:distinctSubjects;
+        void:triples                "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctObjectsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctObjects>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctObjectsvoid!long>;
+        void:property               void:distinctObjects;
+        void:triples                "4"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!classesvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!classes>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!classesvoid!long>;
+        void:property               void:classes;
+        void:triples                "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!classPartition>
+        void:property  void:classPartition;
+        void:triples   "11"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!titlevoid!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!title>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!titlevoid!string>;
+        void:property               dcterms:title;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!license>
+        void:property  dcterms:license;
+        void:triples   "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!issued>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!issuedvoid!date>;
+        void:property               dcterms:issued;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctLiteralsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctLiterals>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctLiteralsvoid!long>;
+        void:property               void_ext:distinctLiterals;
+        void:triples                "4"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceSubjectsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctIRIReferenceSubjects>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceSubjectsvoid!long>;
+        void:property               void_ext:distinctIRIReferenceSubjects;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceObjectsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctIRIReferenceObjects>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceObjectsvoid!long>;
+        void:property               void_ext:distinctIRIReferenceObjects;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!distinctBlankNodeSubjectsvoid!long>
+        void_ext:datatype  xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctBlankNodeSubjects>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!distinctBlankNodeSubjectsvoid!long>;
+        void:property               void_ext:distinctBlankNodeSubjects;
+        void:triples                "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Graph>
+        void:class              <http://www.w3.org/ns/sparql-service-description#Graph>;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!triples> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!propertyPartition> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctSubjects> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctObjects> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!classes> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!classPartition> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!title> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!license> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!issued> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctLiterals> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctIRIReferenceSubjects> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctIRIReferenceObjects> , <https://sparql.swisslipids.org/.well-known/void#void!Graphvoid!distinctBlankNodeSubjects> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!namedGraph>
+        void:property  <http://www.w3.org/ns/sparql-service-description#namedGraph>;
+        void:triples   "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!defaultGraphvoid!Graph>
+        void:class  <http://www.w3.org/ns/sparql-service-description#Graph> .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!defaultGraph>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!defaultGraphvoid!Graph>;
+        void:property        <http://www.w3.org/ns/sparql-service-description#defaultGraph>;
+        void:triples         "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!versionvoid!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!version>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!versionvoid!string>;
+        void:property               pav:version;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!issuedvoid!date>
+        void_ext:datatype  xsd:date .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!issued>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#void!issuedvoid!date>;
+        void:property               dcterms:issued;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#void!Dataset>
+        void:class              <http://www.w3.org/ns/sparql-service-description#Dataset>;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!namedGraph> , <https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!defaultGraph> , <https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!version> , <https://sparql.swisslipids.org/.well-known/void#void!Datasetvoid!issued> .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_void>
+        rdf:type                   <http://www.w3.org/ns/sparql-service-description#Graph>;
+        void_ext:distinctLiterals  "82"^^xsd:long;
+        dcterms:license            <http://creativecommons.org/licenses/by/4.0/>;
+        void:classPartition        <https://sparql.swisslipids.org/.well-known/void#void!Dataset> , <https://sparql.swisslipids.org/.well-known/void#void!Graph> , <https://sparql.swisslipids.org/.well-known/void#void!Service>;
+        void:classes               "3"^^xsd:long;
+        void:distinctObjects       "82"^^xsd:long;
+        void:propertyPartition     <https://sparql.swisslipids.org/.well-known/void#void!primaryTopicOf> , <https://sparql.swisslipids.org/.well-known/void#void!supportedLanguage> , <https://sparql.swisslipids.org/.well-known/void#void!resultFormat> , <https://sparql.swisslipids.org/.well-known/void#void!namedGraph> , <https://sparql.swisslipids.org/.well-known/void#void!name> , <https://sparql.swisslipids.org/.well-known/void#void!graph> , <https://sparql.swisslipids.org/.well-known/void#void!feature> , <https://sparql.swisslipids.org/.well-known/void#void!endpoint> , <https://sparql.swisslipids.org/.well-known/void#void!defaultGraph> , <https://sparql.swisslipids.org/.well-known/void#void!defaultDataset> , <https://sparql.swisslipids.org/.well-known/void#void!type> , <https://sparql.swisslipids.org/.well-known/void#void!triples> , <https://sparql.swisslipids.org/.well-known/void#void!propertyPartition> , <https://sparql.swisslipids.org/.well-known/void#void!property> , <https://sparql.swisslipids.org/.well-known/void#void!distinctSubjects> , <https://sparql.swisslipids.org/.well-known/void#void!distinctObjects> , <https://sparql.swisslipids.org/.well-known/void#void!classes> , <https://sparql.swisslipids.org/.well-known/void#void!classPartition> , <https://sparql.swisslipids.org/.well-known/void#void!class> , <https://sparql.swisslipids.org/.well-known/void#void!version> , <https://sparql.swisslipids.org/.well-known/void#void!title> , <https://sparql.swisslipids.org/.well-known/void#void!publisher> , <https://sparql.swisslipids.org/.well-known/void#void!datatype> , <https://sparql.swisslipids.org/.well-known/void#void!datatypePartition> , <https://sparql.swisslipids.org/.well-known/void#void!distinctBlankNodeSubjects> , <https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceObjects> , <https://sparql.swisslipids.org/.well-known/void#void!distinctIRIReferenceSubjects> , <https://sparql.swisslipids.org/.well-known/void#void!distinctLiterals> , <https://sparql.swisslipids.org/.well-known/void#void!creator> , <https://sparql.swisslipids.org/.well-known/void#void!issued> , <https://sparql.swisslipids.org/.well-known/void#void!license>;
+        void:triples               "662"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void>
+        dcterms:creator    <https://www.uniprot.org/help/about#SIB>;
+        dcterms:publisher  <https://www.uniprot.org/help/about#SIB>;
+        dcterms:title      "SwissLipids void";
+        <http://www.w3.org/ns/sparql-service-description#graph>
+                <https://sparql.swisslipids.org/.well-known/void#_graph_void>;
+        <http://www.w3.org/ns/sparql-service-description#name>
+                <https://sparql.swisslipids.org/.well-known/void> .
+
+<https://www.uniprot.org/help/about#SIB>
+        foaf:primaryTopicOf  <https://www.sib.swiss> .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rankPreference>
+        void:distinctObjects   "6"^^xsd:long;
+        void:distinctSubjects  "6"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_rankPreference>;
+        void:triples           "6"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rank>
+        void:distinctObjects   "6"^^xsd:long;
+        void:distinctSubjects  "777956"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_rank>;
+        void:triples           "777956"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_position>
+        void:distinctObjects   "22"^^xsd:long;
+        void:distinctSubjects  "1852844"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_position>;
+        void:triples           "1852844"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_hasPart>
+        void:distinctObjects   "1852844"^^xsd:long;
+        void:distinctSubjects  "765323"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_hasPart>;
+        void:triples           "1852844"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_derived_from>
+        void:distinctObjects   "216"^^xsd:long;
+        void:distinctSubjects  "1852844"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_derived_from>;
+        void:triples           "1852844"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_citation>
+        void:distinctObjects   "1532"^^xsd:long;
+        void:distinctSubjects  "3066"^^xsd:long;
+        void:property          <https://swisslipids.org/rdf/SLM_citation>;
+        void:triples           "9940"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!depiction>
+        void:distinctObjects   "578352"^^xsd:long;
+        void:distinctSubjects  "778896"^^xsd:long;
+        void:property          foaf:depiction;
+        void:triples           "778896"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!altLabel>
+        void:distinctObjects   "727572"^^xsd:long;
+        void:distinctSubjects  "776464"^^xsd:long;
+        void:property          <http://www.w3.org/2004/02/skos/core#altLabel>;
+        void:triples           "776464"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!imports>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          owl:imports;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!equivalentClass>
+        void:distinctObjects   "4278"^^xsd:long;
+        void:distinctSubjects  "4276"^^xsd:long;
+        void:property          owl:equivalentClass;
+        void:triples           "4279"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!subClassOf>
+        void:distinctObjects   "185720"^^xsd:long;
+        void:distinctSubjects  "779277"^^xsd:long;
+        void:property          rdfs:subClassOf;
+        void:triples           "1272889"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!seeAlso>
+        void:distinctObjects   "21133"^^xsd:long;
+        void:distinctSubjects  "21132"^^xsd:long;
+        void:property          rdfs:seeAlso;
+        void:triples           "21137"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!label>
+        void:distinctObjects   "779145"^^xsd:long;
+        void:distinctSubjects  "779258"^^xsd:long;
+        void:property          rdfs:label;
+        void:triples           "779258"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!domain>
+        void:distinctObjects   "1"^^xsd:long;
+        void:distinctSubjects  "1"^^xsd:long;
+        void:property          rdfs:domain;
+        void:triples           "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!comment>
+        void:distinctObjects   "3"^^xsd:long;
+        void:distinctSubjects  "3"^^xsd:long;
+        void:property          rdfs:comment;
+        void:triples           "3"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!type>
+        void:distinctObjects   "5"^^xsd:long;
+        void:distinctSubjects  "779292"^^xsd:long;
+        void:property          rdf:type;
+        void:triples           "779292"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!hasDbXref>
+        void:distinctObjects   "534224"^^xsd:long;
+        void:distinctSubjects  "509245"^^xsd:long;
+        void:property          <http://www.geneontology.org/formats/oboInOwl#hasDbXref>;
+        void:triples           "543146"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!CHEMINF_000412>
+        void:distinctObjects   "779249"^^xsd:long;
+        void:distinctSubjects  "779249"^^xsd:long;
+        void:property          <http://semanticscience.org/resource/CHEMINF_000412>;
+        void:triples           "779249"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!smiles>
+        void:distinctObjects   "594258"^^xsd:long;
+        void:distinctSubjects  "778936"^^xsd:long;
+        void:property          <http://purl.obolibrary.org/obo/chebi/smiles>;
+        void:triples           "778936"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!inchikey>
+        void:distinctObjects   "593204"^^xsd:long;
+        void:distinctSubjects  "593209"^^xsd:long;
+        void:property          <http://purl.obolibrary.org/obo/chebi/inchikey>;
+        void:triples           "593209"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!inchi>
+        void:distinctObjects   "507728"^^xsd:long;
+        void:distinctSubjects  "593209"^^xsd:long;
+        void:property          <http://purl.obolibrary.org/obo/chebi/inchi>;
+        void:triples           "593209"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!formula>
+        void:distinctObjects   "20524"^^xsd:long;
+        void:distinctSubjects  "779035"^^xsd:long;
+        void:property          <http://purl.obolibrary.org/obo/chebi/formula>;
+        void:triples           "779035"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!charge>
+        void:distinctObjects   "9"^^xsd:long;
+        void:distinctSubjects  "444892"^^xsd:long;
+        void:property          <http://purl.obolibrary.org/obo/chebi/charge>;
+        void:triples           "444892"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Ontologyswisslipids!imports>
+        void:property  owl:imports;
+        void:triples   "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Ontology>
+        void:class              owl:Ontology;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!Ontologyswisslipids!imports> .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!domainswisslipids!Class>
+        void:class  owl:Class .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!domain>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!domainswisslipids!Class>;
+        void:property        rdfs:domain;
+        void:triples         "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!comment>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!commentswisslipids!string>;
+        void:property               rdfs:comment;
+        void:triples                "2"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectProperty>
+        void:class              owl:ObjectProperty;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!domain> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectPropertyswisslipids!comment> .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!DatatypePropertyswisslipids!label>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!labelswisslipids!string>;
+        void:property               rdfs:label;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!DatatypeProperty>
+        void:class              owl:DatatypeProperty;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!DatatypePropertyswisslipids!label> .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rankPreferenceswisslipids!integer>
+        void_ext:datatype  xsd:integer .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rankPreference>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rankPreferenceswisslipids!integer>;
+        void:property               <https://swisslipids.org/rdf/SLM_rankPreference>;
+        void:triples                "6"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rankswisslipids!Class>
+        void:class  owl:Class .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rank>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rankswisslipids!Class>;
+        void:property        <https://swisslipids.org/rdf/SLM_rank>;
+        void:triples         "777956"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_hasPart>
+        void:property  <https://swisslipids.org/rdf/SLM_hasPart>;
+        void:triples   "1852844"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_citation>
+        void:property  <https://swisslipids.org/rdf/SLM_citation>;
+        void:triples   "9940"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!depiction>
+        void:property  foaf:depiction;
+        void:triples   "778896"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!altLabelswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!altLabel>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!altLabelswisslipids!string>;
+        void:property               <http://www.w3.org/2004/02/skos/core#altLabel>;
+        void:triples                "776464"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!equivalentClass>
+        void:property  owl:equivalentClass;
+        void:triples   "4279"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!subClassOfswisslipids!Class>
+        void:class  owl:Class .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!subClassOf>
+        void:classPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!subClassOfswisslipids!Class>;
+        void:property        rdfs:subClassOf;
+        void:triples         "1272889"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!seeAlso>
+        void:property  rdfs:seeAlso;
+        void:triples   "21137"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!label>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!labelswisslipids!string>;
+        void:property               rdfs:label;
+        void:triples                "779255"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!commentswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!comment>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!commentswisslipids!string>;
+        void:property               rdfs:comment;
+        void:triples                "1"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!hasDbXref>
+        void:property  <http://www.geneontology.org/formats/oboInOwl#hasDbXref>;
+        void:triples   "543146"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!CHEMINF_000412swisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!CHEMINF_000412>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!CHEMINF_000412swisslipids!string>;
+        void:property               <http://semanticscience.org/resource/CHEMINF_000412>;
+        void:triples                "779249"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!smilesswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!smiles>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!smilesswisslipids!string>;
+        void:property               <http://purl.obolibrary.org/obo/chebi/smiles>;
+        void:triples                "778936"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!inchikeyswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!inchikey>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!inchikeyswisslipids!string>;
+        void:property               <http://purl.obolibrary.org/obo/chebi/inchikey>;
+        void:triples                "593209"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!inchiswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!inchi>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!inchiswisslipids!string>;
+        void:property               <http://purl.obolibrary.org/obo/chebi/inchi>;
+        void:triples                "593209"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!formulaswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!formula>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!formulaswisslipids!string>;
+        void:property               <http://purl.obolibrary.org/obo/chebi/formula>;
+        void:triples                "779035"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!chargeswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!charge>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!chargeswisslipids!string>;
+        void:property               <http://purl.obolibrary.org/obo/chebi/charge>;
+        void:triples                "444892"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!Class>
+        void:class              owl:Class;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rankPreference> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_rank> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_hasPart> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!charge> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!formula> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!inchi> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!inchikey> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!smiles> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!CHEMINF_000412> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!hasDbXref> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!comment> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!label> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!seeAlso> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!subClassOf> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!equivalentClass> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!altLabel> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!depiction> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Classswisslipids!SLM_citation> .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!labelswisslipids!string>
+        void_ext:datatype  xsd:string .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!AnnotationPropertyswisslipids!label>
+        void_ext:datatypePartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!labelswisslipids!string>;
+        void:property               rdfs:label;
+        void:triples                "2"^^xsd:long .
+
+<https://sparql.swisslipids.org/.well-known/void#swisslipids!AnnotationProperty>
+        void:class              owl:AnnotationProperty;
+        void:propertyPartition  <https://sparql.swisslipids.org/.well-known/void#swisslipids!AnnotationPropertyswisslipids!label> .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids>
+        rdf:type                   <http://www.w3.org/ns/sparql-service-description#Graph>;
+        void_ext:distinctLiterals  "4001697"^^xsd:long;
+        dcterms:license            <http://creativecommons.org/licenses/by/4.0/>;
+        void:classPartition        <https://sparql.swisslipids.org/.well-known/void#swisslipids!AnnotationProperty> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Class> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!DatatypeProperty> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!ObjectProperty> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!Ontology>;
+        void:classes               "5"^^xsd:long;
+        void:distinctObjects       "4001697"^^xsd:long;
+        void:propertyPartition     <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rankPreference> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_rank> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_position> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_hasPart> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_derived_from> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!SLM_citation> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!depiction> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!altLabel> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!imports> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!equivalentClass> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!subClassOf> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!seeAlso> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!label> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!domain> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!comment> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!type> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!charge> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!formula> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!inchi> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!inchikey> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!smiles> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!CHEMINF_000412> , <https://sparql.swisslipids.org/.well-known/void#swisslipids!hasDbXref>;
+        void:triples               "15270330"^^xsd:long .
+
+<https://sparql.swisslipids.org/swisslipids>
+        dcterms:creator    <https://www.uniprot.org/help/about#SIB>;
+        dcterms:publisher  <https://www.uniprot.org/help/about#SIB>;
+        dcterms:title      "SwissLipids swisslipids";
+        <http://www.w3.org/ns/sparql-service-description#graph>
+                <https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids>;
+        <http://www.w3.org/ns/sparql-service-description#name>
+                <https://sparql.swisslipids.org/swisslipids> .
+
+<file:///home/labra/src/biohackathon/bh24-sparql-schema-conversions/examples/void2shex/#_2>
+        rdf:type        <http://www.w3.org/ns/sparql-service-description#Graph>;
+        dcterms:issued  "2024-09-14"^^xsd:date;
+        dcterms:title   "SwissLipids";
+        void:triples    "15271348"^^xsd:long .
+
+<file:///home/labra/src/biohackathon/bh24-sparql-schema-conversions/examples/void2shex/#_1>
+        rdf:type        <http://www.w3.org/ns/sparql-service-description#Dataset>;
+        dcterms:issued  "2024-09-14"^^xsd:date;
+        pav:version     "2024_09_14";
+        <http://www.w3.org/ns/sparql-service-description#defaultGraph>
+                <file:///home/labra/src/biohackathon/bh24-sparql-schema-conversions/examples/void2shex/#_2>;
+        <http://www.w3.org/ns/sparql-service-description#namedGraph>
+                <https://sparql.swisslipids.org/.well-known/sparql-examples> , <https://sparql.swisslipids.org/.well-known/void> , <https://sparql.swisslipids.org/swisslipids> .
+
+<https://sparql.swisslipids.org/sparql>
+        rdf:type  <http://www.w3.org/ns/sparql-service-description#Service>;
+        <http://www.w3.org/ns/sparql-service-description#defaultDataset>
+                <file:///home/labra/src/biohackathon/bh24-sparql-schema-conversions/examples/void2shex/#_1>;
+        <http://www.w3.org/ns/sparql-service-description#endpoint>
+                <https://sparql.swisslipids.org/sparql>;
+        <http://www.w3.org/ns/sparql-service-description#feature>
+                <http://www.w3.org/ns/sparql-service-description#BasicFederatedQuery> , <http://www.w3.org/ns/sparql-service-description#UnionDefaultGraph>;
+        <http://www.w3.org/ns/sparql-service-description#resultFormat>
+                <http://www.w3.org/ns/formats/SPARQL_Results_XML> , <http://www.w3.org/ns/formats/Turtle> , <http://www.w3.org/ns/formats/SPARQL_Results_TSV> , <http://www.w3.org/ns/formats/RDF_XML> , <http://www.w3.org/ns/formats/N-Triples> , <http://www.w3.org/ns/formats/SPARQL_Results_JSON> , <http://www.w3.org/ns/formats/SPARQL_Results_CSV>;
+        <http://www.w3.org/ns/sparql-service-description#supportedLanguage>
+                <http://www.w3.org/ns/sparql-service-description#SPARQL11Query> .

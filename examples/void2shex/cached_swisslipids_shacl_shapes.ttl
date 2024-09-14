@@ -1,0 +1,273 @@
+PREFIX dash:     <http://datashapes.org/dash#>
+PREFIX dcat:     <http://www.w3.org/ns/dcat#>
+PREFIX dct:      <http://purl.org/dc/terms/>
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX foaf:     <http://xmlns.com/foaf/0.1/>
+PREFIX owl:      <http://www.w3.org/2002/07/owl#>
+PREFIX pav:      <http://purl.org/pav/>
+PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sd:       <http://www.w3.org/ns/sparql-service-description#>
+PREFIX sh:       <http://www.w3.org/ns/shacl#>
+PREFIX up:       <http://purl.uniprot.org/core/>
+PREFIX void:     <http://rdfs.org/ns/void#>
+PREFIX void_ext: <http://ldf.fi/void-ext#>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-d3504b7574b31cc49e6f7934d893a8f9>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:date;
+                          sh:path      dcterms:issued
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  sd:Graph;
+                          sh:path   sd:defaultGraph
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   sd:namedGraph
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      pav:version
+                        ];
+        sh:targetClass  sd:Dataset .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-7cb4e6a45cb6e9b5d1e8ea459192da1b>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void:triples
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void_ext:distinctBlankNodeSubjects
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   void:classPartition
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void:classes
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void_ext:distinctIRIReferenceSubjects
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:date;
+                          sh:path      dcterms:issued
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   void:propertyPartition
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      dcterms:title
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void_ext:distinctIRIReferenceObjects
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void_ext:distinctLiterals
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void:distinctSubjects
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   dcterms:license
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:long;
+                          sh:path      void:distinctObjects
+                        ];
+        sh:targetClass  sd:Graph .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-cf0228a016dacbaa5cc8bcf3fb044cd5>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  sd:Dataset;
+                          sh:path   sd:defaultDataset
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   sd:feature
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   sd:supportedLanguage
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  sd:Service;
+                          sh:path   sd:endpoint
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   sd:resultFormat
+                        ];
+        sh:targetClass  sd:Service .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-89df24df35df8882616112ab6a78df83>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   owl:imports
+                        ];
+        sh:targetClass  owl:Ontology .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-472ee8b9e92f00863f1b11929967a7fa>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  owl:Class;
+                          sh:path   rdfs:domain
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:comment
+                        ];
+        sh:targetClass  owl:ObjectProperty .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-9e6d9eddc19d6811c0a885c828aceb63>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:label
+                        ];
+        sh:targetClass  owl:DatatypeProperty .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-6be100d081a438502013ba4e5fef3db7>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://purl.obolibrary.org/obo/chebi/formula>
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   owl:equivalentClass
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  owl:Class;
+                          sh:path   <https://swisslipids.org/rdf/SLM_rank>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:integer;
+                          sh:path      <https://swisslipids.org/rdf/SLM_rankPreference>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://purl.obolibrary.org/obo/chebi/charge>
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  owl:Class;
+                          sh:path   rdfs:subClassOf
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   <https://swisslipids.org/rdf/SLM_hasPart>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://purl.obolibrary.org/obo/chebi/inchikey>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://purl.obolibrary.org/obo/chebi/inchi>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://semanticscience.org/resource/CHEMINF_000412>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:comment
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:label
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   rdfs:seeAlso
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://www.w3.org/2004/02/skos/core#altLabel>
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   <https://swisslipids.org/rdf/SLM_citation>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      <http://purl.obolibrary.org/obo/chebi/smiles>
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   foaf:depiction
+                        ];
+        sh:targetClass  owl:Class .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-55439a5d90df8ccad534dc9af3fc4aee>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:label
+                        ];
+        sh:targetClass  owl:AnnotationProperty .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-ccf949e9924a56ac982c5d08c823f910>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  rdf:langString;
+                          sh:path      rdfs:label
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      sh:select
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  rdf:langString;
+                          sh:path      rdfs:comment
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  owl:Ontology;
+                          sh:path   sh:prefixes
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   <https://schema.org/target>
+                        ];
+        sh:targetClass  sh:SPARQLExecutable .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-d913cb6cc297b2920440b7292b53c7c6>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  rdf:langString;
+                          sh:path      rdfs:comment
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  rdf:langString;
+                          sh:path      rdfs:label
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   <https://schema.org/target>
+                        ];
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      sh:select
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:class  owl:Ontology;
+                          sh:path   sh:prefixes
+                        ];
+        sh:targetClass  sh:SPARQLSelectExecutable .
+
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-89df24df35df8882616112ab6a78df83>
+        rdf:type        sh:NodeShape;
+        sh:property     [ rdf:type     sh:PropertyShape;
+                          sh:datatype  xsd:string;
+                          sh:path      rdfs:comment
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   sh:declare
+                        ];
+        sh:property     [ rdf:type  sh:PropertyShape;
+                          sh:path   owl:imports
+                        ];
+        sh:targetClass  owl:Ontology .

@@ -1,0 +1,1466 @@
+prefix void: <http://rdfs.org/ns/void#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+prefix dct: <http://purl.org/dc/terms/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix up: <http://purl.uniprot.org/core/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix pav: <http://purl.org/pav/>
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix void_ext: <http://ldf.fi/void-ext#>
+prefix dash: <http://datashapes.org/dash#>
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-9b4fa9f729d19c51a8ea9c197fd44848> {
+    up:fullName xsd:string;
+    up:cdAntigenName xsd:string;
+    up:shortName xsd:string;
+    up:ecName xsd:string;
+    up:allergenName xsd:string;
+    up:internationalNonproprietaryName xsd:string;
+    rdf:type  [ up:Structured_Name ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-e0f099c7f2ad6d53142226f1411a1dbb> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-859c4cbf6c9e4d7307bfb48f57ef997e> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Zinc_Finger_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-78554e2493cde742745505bf2550eb11> {
+    up:mass xsd:int;
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Chain_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-028b8124a1a54ac7199cd09566b4717c> {
+    up:sequenceDiscrepancy .;
+    up:locatedOn {  };
+    up:citation {  };
+    up:database .;
+    rdf:type  [ up:Nucleotide_Resource ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-a56609dbde0901e74b7eeaa88c8eb572> {
+    up:precursor xsd:boolean;
+    up:translatedFrom { rdf:type  [ up:Nucleotide_Resource ] };
+    up:modification { rdf:type  [ up:Alternative_Sequence_Annotation ] };
+    rdfs:comment xsd:string;
+    up:citation {  };
+    up:mass xsd:int;
+    up:basedOn {  };
+    up:name xsd:string;
+    up:fragment xsd:string;
+    up:replaces .;
+    rdf:value xsd:string;
+    up:modified xsd:date;
+    up:version xsd:int;
+    up:md5Checksum xsd:string;
+    rdf:type  [ up:External_Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-1706fefd0c85b5429f9076d017a18098> {
+    up:participant { rdf:type  [ up:Participant ] };
+    up:experiments xsd:int;
+    up:xeno xsd:boolean;
+    rdf:type  [ up:Interaction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_sparql-examples-shape-5eeb053114221999cf7f89f7320b3fc6> {
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    <https://schema.org/target> .;
+    rdfs:comment xsd:string;
+    sh:construct xsd:string;
+    rdf:type  [ sh:SPARQLConstructExecutable ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7e37c98a80e6a4bf471aa4eb9a0ca3cd> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:mass xsd:int;
+    rdf:type  [ up:Peptide_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_keywords-shape-a60653d54c768e734b0812b532117bab> {
+    rdfs:subClassOf { rdf:type  [ up:Concept ] };
+    rdfs:comment xsd:string;
+    up:category { rdf:type  [ up:Concept ] };
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    <http://www.w3.org/2004/02/skos/core#narrower> { rdf:type  [ up:Concept ] };
+    rdfs:seeAlso { rdf:type  [ owl:Class ] };
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    rdf:type  [ up:Concept ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_database-shape-4e2672c5c050a38e0f5788cab0e144ae> {
+    up:abbreviation xsd:string;
+    rdfs:seeAlso .;
+    up:linkIsExplicit xsd:boolean;
+    up:category xsd:string;
+    rdfs:comment xsd:string;
+    rdfs:label xsd:string;
+    up:urlTemplate xsd:string;
+    dct:identifier xsd:string;
+    up:citation { rdf:type  [ up:Citation ] };
+    rdf:type  [ up:Database ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_keywords-shape-6be100d081a438502013ba4e5fef3db7> {
+    up:database .;
+    rdfs:label xsd:string;
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_sparql-examples-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    sh:declare .;
+    rdfs:comment xsd:string;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-51014506a7e7ce67cf2ade156f0bd291> {
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:substitution xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Sequence_Conflict_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2dbf6e5a4aa9c721c2fcfb6477484b3a> {
+    rdfs:label xsd:string;
+    rdf:type  [ up:Plasmid ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-c012b7ec75460f4fa419f022afb089eb> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:label xsd:string;
+    rdfs:range { rdf:type  [ owl:Class ] };
+    rdfs:domain { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:InverseFunctionalProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citationmapping-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-619c77745215aa2b12d271cddae7a430> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Region_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-871848d9dbbd3e692c445fc9931a316f> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:PTM_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-bb70ba4af84eba77e76cf90374b5e869> {
+    rdfs:comment xsd:string;
+    rdfs:label xsd:string;
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:seeAlso .;
+    rdf:type  [ owl:NamedIndividual ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-ddec3eb53358c92af62b7551c5cf3571> {
+    up:attribution .;
+    rdf:object {  };
+    up:scope xsd:string;
+    rdf:subject { rdf:type  [ up:Protein ] };
+    rdf:predicate .;
+    up:context {  };
+    rdf:type  [ up:Citation_Statement ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-90ff75f5516ef1aed804506904fef585> {
+    rdfs:label xsd:string;
+    rdf:type  [ up:Transposon ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-da1069b32702dcff4f4947810cfd2fc3> {
+    up:signatureSequenceMatch .;
+    up:database .;
+    rdfs:comment xsd:string;
+    rdfs:seeAlso {  };
+    up:translatedFrom .;
+    rdf:type  [ up:Resource ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-afab0dea22c979f0d9750a1dbe4e2e42> {
+    rdf:object xsd:string;
+    up:attribution .;
+    rdf:predicate .;
+    up:citation {  };
+    up:scope xsd:string;
+    rdf:subject {  };
+    up:context {  };
+    rdf:type  [ rdf:Statement ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-3ab674f98f7bbef50efbd4a711e71e50> {
+    <http://biohackathon.org/resource/faldo#reference> {  };
+    <http://biohackathon.org/resource/faldo#end> {  };
+    <http://biohackathon.org/resource/faldo#begin> {  };
+    rdf:type  [ <http://biohackathon.org/resource/faldo#InRangePosition> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8695d18e3cbb212c5c861af7a0e587c7> {
+    up:sequence {  };
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Erroneous_Initiation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-802c170cd9d60a76463f87923d74540d> {
+    up:organism .;
+    <http://busco.ezlab.org/schema#has_score> {
+        rdf:type  [ <http://busco.ezlab.org/schema#Score> ]
+    };
+    up:citation {  };
+    up:exclusionReason xsd:string;
+    up:panproteome {  };
+    <http://www.w3.org/2004/02/skos/core#narrower> { rdf:type  [ up:Proteome_Component ] };
+    <http://www.w3.org/2004/02/skos/core#closeMatch> {
+        rdf:type  [ <http://purl.obolibrary.org/obo/STATO_0000193> ]
+    };
+    rdfs:comment xsd:string;
+    up:strain { rdf:type  [ up:Strain ] };
+    dct:modified xsd:date;
+    rdfs:seeAlso .;
+    rdf:type  [ up:Representative_Proteome ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-827483a1c735fb5923fdacb35c0051f9> {
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdf:type  [ up:Gene ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_void-shape-7cb4e6a45cb6e9b5d1e8ea459192da1b> {
+    void_ext:distinctLiterals xsd:long;
+    void_ext:distinctIRIReferenceSubjects xsd:long;
+    void_ext:distinctIRIReferenceObjects xsd:long;
+    void:distinctObjects xsd:long;
+    void:propertyPartition .;
+    void:classPartition .;
+    void:classes xsd:long;
+    void_ext:distinctBlankNodeSubjects xsd:long;
+    void:triples xsd:long;
+    void:distinctSubjects xsd:long;
+    dct:issued xsd:date;
+    dct:title xsd:string;
+    dct:license .;
+    rdf:type  [ sd:Graph ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_sparql-examples-shape-ccf949e9924a56ac982c5d08c823f910> {
+    sh:select xsd:string;
+    <https://schema.org/potentialAction> .;
+    <https://schema.org/keyword> xsd:string;
+    sh:describe xsd:string;
+    rdfs:label xsd:string;
+    sh:construct xsd:string;
+    sh:ask xsd:string;
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    rdfs:comment xsd:string;
+    rdfs:seeAlso .;
+    <https://schema.org/target> .;
+    rdf:type  [ sh:SPARQLExecutable ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_chebi-shape-9ed2fb7d3b7985c23e788a879a4db9d7> {
+    owl:onProperty {  };
+    owl:someValuesFrom { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:Restriction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-84c9417ec568e10c2c679df5df8354cb> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Biotechnology_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-137c9dc1cb27b23cc8bf8dc3ec2d5c89> {
+    rdf:rest { rdf:type  [ rdf:List ] };
+    rdf:first xsd:string;
+    rdf:type  [ rdf:List ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citations-shape-871b8ecaf1f0928b22c672f0eedcbab1> {
+    up:editor xsd:string;
+    up:title xsd:string;
+    up:author xsd:string;
+    up:name xsd:string;
+    up:group xsd:string;
+    up:date xsd:date;
+    up:pages xsd:string;
+    up:publisher xsd:string;
+    up:volume xsd:string;
+    up:place xsd:string;
+    rdf:type  [ up:Book_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citationmapping-shape-ddec3eb53358c92af62b7551c5cf3571> {
+    rdf:predicate .;
+    up:attribution .;
+    rdf:object .;
+    rdf:subject .;
+    up:mappedAnnotation { rdf:type  [ up:Annotation ] };
+    up:scope xsd:string;
+    rdf:type  [ up:Citation_Statement ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniref-shape-9dfa0ced2e1a84d5e73e3f17cb1985f9> {
+    up:member { rdf:type  [ up:Sequence ] };
+    rdfs:label xsd:string;
+    up:modified xsd:date;
+    up:identity xsd:float;
+    up:someMembersClassifiedWith .;
+    up:commonTaxon .;
+    rdf:type  [ up:Cluster ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-583efc6f2fa1e0db47dcd3fda52816a0> {
+    <http://biohackathon.org/resource/faldo#reference> { rdf:type  [ up:Sequence ] };
+    <http://biohackathon.org/resource/faldo#position> xsd:int;
+    rdf:type  [ <http://biohackathon.org/resource/faldo#ExactPosition> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8f6d3f9abbca88785e18f4c4a4250ba7> {
+    owl:sameAs { rdf:type  [ up:Transcript_Resource ] };
+    up:translatedTo { rdf:type  [ up:Transcript_Resource ] };
+    up:database .;
+    rdfs:comment xsd:string;
+    up:transcribedFrom { rdf:type  [ up:Transcript_Resource ] };
+    rdfs:seeAlso {  };
+    rdf:type  [ up:Transcript_Resource ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-27fa3b5b769de83067372850e7c7b216> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Lipidation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-74cc61b5afedcf8f87e17f096654408f> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    rdf:type  [ up:Frameshift_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_journal-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_tissues-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7c0cae77eca52763dc573555fae0964c> {
+    <http://biohackathon.org/resource/faldo#reference> {  };
+    <http://biohackathon.org/resource/faldo#end> {  };
+    <http://biohackathon.org/resource/faldo#begin> {  };
+    <http://biohackathon.org/resource/faldo#possiblePosition> {  };
+    <http://biohackathon.org/resource/faldo#position> xsd:int;
+    rdf:type  [ <http://biohackathon.org/resource/faldo#Position> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-6d59a27c709e4ca3dd0054a396525255> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Site_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-03f9fbbac7535cc019821f7f68920a32> {
+    up:title xsd:string;
+    up:date xsd:date;
+    up:group xsd:string;
+    up:submittedTo xsd:string;
+    up:author xsd:string;
+    rdf:type  [ up:Submission_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8c3c186386a62fb96fcb8e8e90f2b330> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Transit_Peptide_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-cbd6a50b4e6f54dcb49c3aea32ac401c> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Intramembrane_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_go-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-bc5981c14bafc789cf284f6cd9b1689c> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Toxic_Dose_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-e8b935a34267bdf03bb5d31a6e6a588a> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Compositional_Bias_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-dfeaa076c456882174ca4ec99ed8d070> {
+    up:name xsd:string;
+    rdf:type  [ up:Strain ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-ca7b78231a196f7aeb9c0e41cad5a5c9> {
+    up:substitution xsd:string;
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Alternative_Sequence_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_diseases-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-9b4fa9f729d19c51a8ea9c197fd44848> {
+    up:structuredNameType xsd:string;
+    rdf:type  [ up:Structured_Name ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-3c968438a790ec535a8b59a10e0c1e16> {
+    up:sequence {  };
+    up:measuredAffinity xsd:string;
+    up:measuredActivity xsd:string;
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Kinetics_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-de50291c1aa40e1096a2acac4fdb0f43> {
+    rdfs:seeAlso .;
+    up:sequence {  };
+    rdf:type  [ up:Pathway_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-f0c908f5cda0c9b93be2c74c2b569388> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Alternative_Promoter_Usage_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-c3385de0f031e5166d7c7fa404c5e286> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Topological_Domain_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_tissues-shape-5787c183698dabcbe3fb0297e94d561c> {
+    rdfs:seeAlso .;
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdf:type  [ up:Tissue ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-eb5a2780b1b5ecfb6e59b02b9d31171e> {
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    up:date xsd:date;
+    up:title xsd:string;
+    up:author xsd:string;
+    rdf:type  [ up:Patent_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-c5534b84c660e3989129e62725dced37> {
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Erroneous_Termination_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_obsolete-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-87391a64824fac5722e2f272a6d9d797> {
+    up:frameshift xsd:boolean;
+    rdfs:comment xsd:string;
+    <http://biohackathon.org/resource/faldo#location> {  };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:RNA_Editing_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_obsolete-shape-81e6dc72cafed42a6ba572f6f759140e> {
+    up:reviewed xsd:boolean;
+    up:replacedBy {  };
+    up:created xsd:date;
+    up:obsolete xsd:boolean;
+    up:version xsd:int;
+    up:modified xsd:date;
+    up:withdrawnFromINSDC xsd:string;
+    up:mnemonic xsd:string;
+    up:oldMnemonic xsd:string;
+    rdf:type  [ up:Protein ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-827483a1c735fb5923fdacb35c0051f9> {
+    up:orfName xsd:string;
+    up:locusName xsd:string;
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdf:type  [ up:Gene ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-dfeaa076c456882174ca4ec99ed8d070> {
+    rdfs:label xsd:string;
+    rdf:type  [ up:Strain ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-dc7a9d0a3e67725ea253a2c5cb4be03c> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Transmembrane_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_taxonomy-shape-7a49f5dd0954737e0f7e916a39e41c59> {
+    up:width xsd:int;
+    up:height xsd:int;
+    rdf:type  [ foaf:Image ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-d2abaf94fcc81e0160a2a35d866f67d4> {
+    up:alias xsd:string;
+    rdfs:subClassOf .;
+    rdfs:comment xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdf:type  [ up:Orientation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-21b2c44096ea5c278ee00a5100d0c10e> {
+    dct:modified xsd:date;
+    rdfs:seeAlso .;
+    up:strain { rdf:type  [ up:Strain ] };
+    up:panproteome {  };
+    <http://www.w3.org/2004/02/skos/core#narrower> { rdf:type  [ up:Proteome_Component ] };
+    up:citation {  };
+    up:organism .;
+    rdfs:comment xsd:string;
+    <http://www.w3.org/2004/02/skos/core#closeMatch> {
+        rdf:type  [ <http://purl.obolibrary.org/obo/STATO_0000193> ]
+    };
+    <http://busco.ezlab.org/schema#has_score> {
+        rdf:type  [ <http://busco.ezlab.org/schema#Score> ]
+    };
+    rdf:type  [ up:Reference_Proteome ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-a4c9dbcee387453f9c022996a738e15e> {
+    rdfs:comment xsd:string;
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    up:sequence {  };
+    rdf:type  [ up:Sequence_Caution_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-d13e00426249fa9c9d128e9ebc4876ae> {
+    rdfs:comment xsd:string;
+    owl:sameAs .;
+    up:alias xsd:string;
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdfs:subClassOf {  };
+    up:relatedLocation { rdf:type  [ up:Topology ] };
+    rdf:type  [ up:Topology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-fea37a35706c4078656bbc766f39d61a> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Modified_Residue_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-9ed2fb7d3b7985c23e788a879a4db9d7> {
+    owl:onProperty {  };
+    owl:maxCardinality xsd:nonNegativeInteger;
+    owl:allValuesFrom { rdf:type  [ owl:Class ] };
+    owl:minCardinality xsd:nonNegativeInteger;
+    owl:cardinality xsd:nonNegativeInteger;
+    owl:qualifiedCardinality xsd:nonNegativeInteger;
+    owl:maxQualifiedCardinality xsd:nonNegativeInteger;
+    owl:hasValue xsd:boolean;
+    owl:onClass { rdf:type  [ owl:Class ] };
+    owl:someValuesFrom {  };
+    rdf:type  [ owl:Restriction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citationmapping-shape-afab0dea22c979f0d9750a1dbe4e2e42> {
+    up:scope xsd:string;
+    up:mappedAnnotation { rdf:type  [ up:Annotation ] };
+    rdf:predicate .;
+    rdf:subject { rdf:type  [ up:Annotation ] };
+    up:attribution .;
+    rdf:object xsd:string;
+    rdf:type  [ rdf:Statement ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8c124fe0317d3c71121edae744db1d93> {
+    up:sequence {  };
+    up:disease .;
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Disease_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_chebi-shape-472ee8b9e92f00863f1b11929967a7fa> {
+    owl:inverseOf {  };
+    rdf:type  [ owl:ObjectProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_rhea-shape-ad808933a855b5113f5840f343578761> {
+    rdfs:comment xsd:string;
+    rdfs:subClassOf { rdf:type  [ rdfs:Class ] };
+    rdfs:label xsd:string;
+    rdf:type  [ rdfs:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-bec878853bd184de3a3a69da2d06993c> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Propeptide_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-e392bd873cef2fbb5ea0b64e79444a50> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Caution_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-004f4bd9ccea511a602f7b9ef73c3f50> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Domain_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-48e685521dbc981c4739ef29e79afa95> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Induction_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-b9a59d910bb1911e4d23f61bb7954a48> {
+    up:enzyme .;
+    up:recommendedName { rdf:type  [ up:Structured_Name ] };
+    up:alternativeName { rdf:type  [ up:Structured_Name ] };
+    rdf:type  [ up:Part ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-89df24df35df8882616112ab6a78df83> {
+    dct:license .;
+    dct:abstract xsd:string;
+    owl:imports .;
+    dct:title xsd:string;
+    rdfs:comment xsd:string;
+    owl:versionInfo xsd:string;
+    <http://purl.org/vocab/vann/preferredNamespacePrefix> xsd:string;
+    dct:description xsd:string;
+    <http://purl.org/ontology/bibo/status> .;
+    <https://w3id.org/widoco/vocab#introduction> xsd:string;
+    rdfs:label xsd:string;
+    rdfs:seeAlso .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-ad4f9786c857ed8d10bffe22b9586508> {
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    up:pages xsd:string;
+    up:group xsd:string;
+    up:volume xsd:string;
+    up:title xsd:string;
+    up:name xsd:string;
+    dct:identifier xsd:string;
+    up:author xsd:string;
+    up:date xsd:date;
+    foaf:primaryTopicOf .;
+    rdf:type  [ up:Journal_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-73316865aae99d8b77753f8ee39e17cc> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdfs:comment xsd:string;
+    up:substitution xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Mutagenesis_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniref-shape-5999abf94bbccfd9146aa014b5afbb70> {
+    up:seedFor { rdf:type  [ up:Cluster ] };
+    up:representativeFor { rdf:type  [ up:Cluster ] };
+    up:organism .;
+    up:length xsd:int;
+    rdfs:label xsd:string;
+    up:memberOf { rdf:type  [ up:Cluster ] };
+    up:sequenceFor .;
+    rdf:type  [ up:Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-6be100d081a438502013ba4e5fef3db7> {
+    up:database .;
+    rdfs:label xsd:string;
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-29206452a7ab9cc9216c36c490783d3c> {
+    up:title xsd:string;
+    up:name xsd:string;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    up:author xsd:string;
+    up:locator xsd:string;
+    dct:identifier xsd:string;
+    up:date xsd:date;
+    rdf:type  [ up:Electronic_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_void-shape-cf0228a016dacbaa5cc8bcf3fb044cd5> {
+    sd:defaultDataset { rdf:type  [ sd:Dataset ] };
+    sd:resultFormat .;
+    sd:supportedLanguage .;
+    sd:feature .;
+    sd:endpoint { rdf:type  [ sd:Service ] };
+    rdf:type  [ sd:Service ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_keywords-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-1d30f54a7efacd04989bf4dcab63d460> {
+    up:redundantTo {  };
+    up:organism .;
+    up:exclusionReason xsd:string;
+    rdfs:comment xsd:string;
+    <http://www.w3.org/2004/02/skos/core#narrower> { rdf:type  [ up:Proteome_Component ] };
+    <http://busco.ezlab.org/schema#has_score> {
+        rdf:type  [ <http://busco.ezlab.org/schema#Score> ]
+    };
+    up:panproteome {  };
+    up:citation {  };
+    up:strain { rdf:type  [ up:Strain ] };
+    dct:modified xsd:date;
+    rdfs:seeAlso .;
+    <http://www.w3.org/2004/02/skos/core#closeMatch> {
+        rdf:type  [ <http://purl.obolibrary.org/obo/STATO_0000193> ]
+    };
+    rdf:type  [ up:Proteome ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-1df2f455a937b1f11f7771c4c40289b5> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Alternative_Initiation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-798bb6f6107d8f702657855324fe92f7> {
+    up:mass xsd:int;
+    up:version xsd:int;
+    up:modified xsd:date;
+    up:md5Checksum xsd:string;
+    up:replaces .;
+    up:fragment xsd:string;
+    up:name xsd:string;
+    up:precursor xsd:boolean;
+    rdf:value xsd:string;
+    rdf:type  [ up:Simple_Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citationmapping-shape-e0f099c7f2ad6d53142226f1411a1dbb> {
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_database-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_diseases-shape-962fa7e0783873624ca464ce56fa1056> {
+    up:mnemonic xsd:string;
+    rdfs:seeAlso .;
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    rdfs:comment xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    rdf:type  [ up:Disease ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-0b2ebdf1cb29e54ae7a73e544ad64681> {
+    owl:sameAs {  };
+    rdfs:label xsd:string;
+    rdf:type  [ up:Participant ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-48700d3cd953ae01dd5dcfaf1d82f6ae> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Coiled_Coil_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-871b8ecaf1f0928b22c672f0eedcbab1> {
+    up:title xsd:string;
+    up:date xsd:date;
+    up:pages xsd:string;
+    up:author xsd:string;
+    rdf:type  [ up:Book_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_chebi-shape-3b46ba4c0adbd1be8c4d87b306c67b25> {
+    owl:inverseOf { rdf:type  [ owl:ObjectProperty ] };
+    rdf:type  [ owl:TransitiveProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-5656232612ffe03dcf71a26013a1c9de> {
+    up:cofactor .;
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Cofactor_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-5b40ed546e81c4752eae0a0e96a0b8d4> {
+    up:name xsd:string;
+    rdf:type  [ up:Unknown_Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-05a5218ebd98669c461ff861cdbf3289> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Sequence_Uncertainty_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citations-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-583efc6f2fa1e0db47dcd3fda52816a0> {
+    <http://biohackathon.org/resource/faldo#position> xsd:int;
+    <http://biohackathon.org/resource/faldo#reference> {  };
+    rdf:type  [ <http://biohackathon.org/resource/faldo#ExactPosition> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-91e7c2b16c25eaa9c835d494ad7cb468> {
+    up:name xsd:string;
+    rdf:value xsd:string;
+    up:replaces .;
+    up:basedOn {  };
+    up:modification { rdf:type  [ up:Alternative_Sequence_Annotation ] };
+    rdf:type  [ up:Modified_Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-717e1ac2dd567ad1567ba802cdb67e2a> {
+    rdfs:subPropertyOf { rdf:type  [ owl:DatatypeProperty ] };
+    rdfs:label xsd:string;
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:range {  };
+    rdfs:seeAlso .;
+    rdfs:comment xsd:string;
+    rdfs:domain { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:FunctionalProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7a942481a09c5d1c9f8642900a2069e0> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Alternative_Splicing_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-871b8ecaf1f0928b22c672f0eedcbab1> {
+    dct:identifier xsd:string;
+    up:title xsd:string;
+    up:place xsd:string;
+    up:group xsd:string;
+    up:volume xsd:string;
+    up:publisher xsd:string;
+    up:pages xsd:string;
+    up:author xsd:string;
+    up:editor xsd:string;
+    up:name xsd:string;
+    up:date xsd:date;
+    rdf:type  [ up:Book_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-03f9fbbac7535cc019821f7f68920a32> {
+    up:submittedTo xsd:string;
+    up:title xsd:string;
+    up:author xsd:string;
+    up:date xsd:date;
+    up:group xsd:string;
+    rdf:type  [ up:Submission_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-fb035ac5b9698b766023a39c9e73b590> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Helix_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_sparql-examples-shape-5449a27bfa4bfae4f541cd431f70436e> {
+    <https://schema.org/target> .;
+    sh:ask xsd:string;
+    rdfs:comment xsd:string;
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    rdf:type  [ sh:SPARQLAskExecutable ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-b91777470c025260b15c204c6561f495> {
+    <http://biohackathon.org/resource/faldo#end> {
+        rdf:type  [ <http://biohackathon.org/resource/faldo#ExactPosition> ]
+    };
+    <http://biohackathon.org/resource/faldo#begin> {
+        rdf:type  [ <http://biohackathon.org/resource/faldo#ExactPosition> ]
+    };
+    rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7e278393af166e401d0160f436d4e955> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Non-adjacent_Residues_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citations-shape-ad4f9786c857ed8d10bffe22b9586508> {
+    up:author xsd:string;
+    up:group xsd:string;
+    rdfs:comment xsd:string;
+    foaf:primaryTopicOf .;
+    up:authorsIncomplete xsd:boolean;
+    up:date xsd:date;
+    up:title xsd:string;
+    dct:identifier xsd:string;
+    up:name xsd:string;
+    up:volume xsd:string;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    up:pages xsd:string;
+    rdf:type  [ up:Journal_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_database-shape-097dd304d445252fccbe3949d86a2abb> {
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    foaf:primaryTopicOf .;
+    dct:identifier xsd:string;
+    rdf:type  [ up:Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_go-shape-9ed2fb7d3b7985c23e788a879a4db9d7> {
+    owl:onProperty .;
+    owl:someValuesFrom { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:Restriction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_obsolete-shape-0f54bcfdf2c55b987a9ba4e1c8fadcde> {
+    up:reviewed xsd:boolean;
+    up:version xsd:int;
+    up:obsolete xsd:boolean;
+    up:modified xsd:date;
+    up:mnemonic xsd:string;
+    up:replacedBy {  };
+    up:created xsd:date;
+    rdf:type  [ up:Member_Of_Redudant_Proteome ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-e3f70d87b893a7f3633bce037dee3ce2> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:label xsd:string;
+    rdfs:comment xsd:string;
+    rdfs:seeAlso .;
+    rdf:type  [ up:Structure_Determination_Method ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-92e2886de6884417cbdc8d5db1243ff5> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Developmental_Stage_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-f61742e4895fe44f40c1fabcfd8c168f> {
+    rdfs:seeAlso .;
+    <http://www.w3.org/2004/02/skos/core#related> .;
+    rdfs:comment xsd:string;
+    up:substitution xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Natural_Variant_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_chebi-shape-1ca745c9f8b3c9769bd64e64b306d5f2> {
+    <http://www.geneontology.org/formats/oboInOwl#hasDbXref> xsd:string;
+    owl:annotatedTarget xsd:string;
+    owl:annotatedProperty .;
+    owl:annotatedSource { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:Axiom ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_taxonomy-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-0b6c09b24f163eed6117b836adfe2441> {
+    rdfs:comment xsd:string;
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:label xsd:string;
+    rdf:type  [ up:Status ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-6c992f2edf0d0d3ae55868a579fa119a> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Turn_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-da5bece87eff9ebd804cf891aeb69bbf> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Temperature_Dependence_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_enzymes-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-ba8dc4e6b6355d80549d81f1ff29ce07> {
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Peptide_Annotation ] };
+    rdf:type  [ up:Pharmaceutical_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7a20fdc8f287454d6fa110ca0c843780> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Active_Site_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-5d8d7b2654e10107de09e7646407caa5> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:comment xsd:string;
+    rdfs:label xsd:string;
+    rdfs:seeAlso .;
+    rdf:type  [ owl:Thing ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8202ce84078ae605b9c3eba187fc7d4f> {
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Erroneous_Gene_Model_Prediction_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-27c3dd9ac8f2732e1afdd939e280c1db> {
+    up:sequence {  };
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Initiator_Methionine_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-0e113072e4a8453c9f6b1c472de6fd41> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Signal_Peptide_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2a8ce57ba399dd74987d1aae0baf2eb7> {
+    rdfs:comment xsd:string;
+    up:method .;
+    up:measuredError xsd:float;
+    up:sequence {  };
+    up:measuredValue xsd:float;
+    rdf:type  [ up:Mass_Spectrometry_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-548cd606e266d96a93dfa3bf04dfcb76> {
+    up:date xsd:date;
+    up:author xsd:string;
+    up:institution xsd:string;
+    up:title xsd:string;
+    up:place xsd:string;
+    rdf:type  [ up:Thesis_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-44424c25d1d25a2048890497c4856abd> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:comment xsd:string;
+    rdfs:seeAlso .;
+    rdfs:label xsd:string;
+    rdf:type  [ up:Mass_Measurement_Method ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_void-shape-d3504b7574b31cc49e6f7934d893a8f9> {
+    sd:namedGraph .;
+    pav:version xsd:string;
+    dct:issued xsd:date;
+    sd:defaultGraph { rdf:type  [ sd:Graph ] };
+    rdf:type  [ sd:Dataset ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-26098b4e958939a726d3b5a45ec8881d> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Nucleotide_Binding_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-391d731be5239d7a6e17d8a20d20cc64> {
+    <http://biohackathon.org/resource/faldo#possiblePosition> {  };
+    <http://biohackathon.org/resource/faldo#reference> {  };
+    rdf:type  [ <http://biohackathon.org/resource/faldo#OneOfPosition> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-5999abf94bbccfd9146aa014b5afbb70> {
+    rdf:value xsd:string;
+    up:sequenceFor .;
+    up:md5Checksum xsd:string;
+    rdfs:seeAlso .;
+    rdf:type  [ up:Sequence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_enzymes-shape-cb3417facb7298e39c95a88df965e375> {
+    rdfs:label xsd:string;
+    rdf:type  [ up:Catalytic_Activity ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2c9ae183f10ed18a9d09d5827e03e64b> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Non-standard_Residue_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-ad4f9786c857ed8d10bffe22b9586508> {
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    up:date xsd:date;
+    up:erratum {  };
+    up:title xsd:string;
+    up:pages xsd:string;
+    up:volume xsd:string;
+    foaf:primaryTopicOf .;
+    up:name xsd:string;
+    dct:identifier xsd:string;
+    up:author xsd:string;
+    up:group xsd:string;
+    rdf:type  [ up:Journal_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-7e1b728ed44bdb12130967e449bf003b> {
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Redox_Potential_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-bd9bed56efba5c0c637de2924714d979> {
+    up:ligandPart .;
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:ligand .;
+    rdf:type  [ up:Binding_Site_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2cbb0d0b0002189e79e960f575fae3e2> {
+    up:sequence { rdf:type  [ up:Chain_Annotation ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Similarity_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-57650054ca7dce861eefd2c27d240119> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Non-terminal_Residue_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-f0fb2e4218a9f2ca2cdf1a068edb28ec> {
+    rdfs:comment xsd:string;
+    up:relatedLocation { rdf:type  [ up:Cellular_Component ] };
+    rdfs:subClassOf { rdf:type  [ up:Cellular_Component ] };
+    <http://www.w3.org/2004/02/skos/core#exactMatch> { rdf:type  [ owl:Class ] };
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    up:alias xsd:string;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    up:citation { rdf:type  [ up:Citation ] };
+    rdfs:seeAlso .;
+    up:partOf { rdf:type  [ up:Cellular_Component ] };
+    owl:sameAs .;
+    rdf:type  [ up:Cellular_Component ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-6257b88c57891283d1f5a216cd387cd0> {
+    up:participant { rdf:type  [ up:Participant ] };
+    up:xeno xsd:boolean;
+    up:experiments xsd:int;
+    rdf:type  [ up:Non_Self_Interaction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-8ae93580f4f9010647418ac9bc9899ad> {
+    up:locatedIn .;
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Subcellular_Location_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-1b543a7608f6ac146954d535971498cb> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Glycosylation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-184f5c44e107ae7c2766ded8e7d5a710> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Ribosomal_Frameshifting ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-17b4b079e0bbed1b382b55d62fcf73ea> {
+    owl:distinctMembers .;
+    rdf:type  [ owl:AllDifferent ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_sparql-examples-shape-d913cb6cc297b2920440b7292b53c7c6> {
+    sh:describe xsd:string;
+    sh:select xsd:string;
+    <https://schema.org/target> .;
+    rdfs:comment xsd:string;
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    <https://schema.org/keyword> xsd:string;
+    rdfs:label xsd:string;
+    rdfs:seeAlso .;
+    <https://schema.org/potentialAction> .;
+    rdf:type  [ sh:SPARQLSelectExecutable ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-6493ba7c426773f6bfdb9812b4068a95> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:label xsd:string;
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Rank ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-097dd304d445252fccbe3949d86a2abb> {
+    foaf:primaryTopicOf .;
+    dct:identifier xsd:string;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    rdf:type  [ up:Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-964933704efe9f9549a11ecee49c34ef> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Polymorphism_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citations-shape-03f9fbbac7535cc019821f7f68920a32> {
+    up:date xsd:date;
+    up:submittedTo xsd:string;
+    up:author xsd:string;
+    up:title xsd:string;
+    up:group xsd:string;
+    rdf:type  [ up:Submission_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-f705ebac2a77b49ea83bea5f3f87b058> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Function_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-9e6d9eddc19d6811c0a885c828aceb63> {
+    owl:deprecated xsd:boolean;
+    rdfs:domain { rdf:type  [ owl:Class ] };
+    rdfs:label xsd:string;
+    rdfs:comment xsd:string;
+    rdfs:seeAlso .;
+    rdfs:subPropertyOf { rdf:type  [ owl:DatatypeProperty ] };
+    rdfs:range { rdf:type  [ rdfs:Datatype ] };
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdf:type  [ owl:DatatypeProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-cb3417facb7298e39c95a88df965e375> {
+    up:catalyzedReaction .;
+    up:enzymeClass .;
+    <http://www.w3.org/2004/02/skos/core#closeMatch> .;
+    rdf:type  [ up:Catalytic_Activity ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2c7209991559b9f71dcee619259ca89a> {
+    up:database .;
+    up:resolution xsd:float;
+    up:chainSequenceMapping .;
+    up:method .;
+    rdf:type  [ up:Structure_Resource ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-472ee8b9e92f00863f1b11929967a7fa> {
+    rdfs:comment xsd:string;
+    owl:inverseOf { rdf:type  [ owl:ObjectProperty ] };
+    rdfs:range {  };
+    rdfs:label xsd:string;
+    rdfs:seeAlso .;
+    rdfs:domain { rdf:type  [ owl:Class ] };
+    rdfs:subPropertyOf {  };
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    owl:deprecated xsd:boolean;
+    rdf:type  [ owl:ObjectProperty ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-2de2a994443bc5e080463fd0981b7274> {
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Motif_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_enzymes-shape-097dd304d445252fccbe3949d86a2abb> {
+    foaf:primaryTopicOf .;
+    dct:identifier xsd:string;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    rdf:type  [ up:Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_taxonomy-shape-5eed5c49d71a869bf6ca173b0006310b> {
+    up:obsolete xsd:boolean;
+    <http://www.w3.org/2004/02/skos/core#narrowerTransitive> { rdf:type  [ up:Taxon ] };
+    up:replacedBy { rdf:type  [ up:Taxon ] };
+    up:rank .;
+    up:synonym xsd:string;
+    up:commonName xsd:string;
+    up:scientificName xsd:string;
+    up:partOfLineage xsd:boolean;
+    rdfs:subClassOf { rdf:type  [ up:Taxon ] };
+    up:host { rdf:type  [ up:Taxon ] };
+    up:otherName xsd:string;
+    foaf:depiction { rdf:type  [ foaf:Image ] };
+    up:mnemonic xsd:string;
+    up:strain { rdf:type  [ up:Strain ] };
+    rdfs:seeAlso .;
+    up:replaces { rdf:type  [ up:Taxon ] };
+    rdf:type  [ up:Taxon ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-36065e27b4975c2d4ceb5e64c7ddbe36> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    rdf:type  [ up:Cross-link_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_pathways-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniref-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_chebi-shape-6be100d081a438502013ba4e5fef3db7> {
+    up:name xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/inchi> xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#inSubset> .;
+    <http://purl.obolibrary.org/obo/chebi/formula> xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#hasDbXref> xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/smiles> xsd:string;
+    <http://purl.obolibrary.org/obo/IAO_0000115> xsd:string;
+    rdfs:label xsd:string;
+    rdfs:subClassOf {  };
+    <http://purl.obolibrary.org/obo/chebi/inchikey> xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#hasSynonym> xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#hasId> xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/charge> xsd:string;
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-17624ea26f31de5e2bdd2b74809bb511> {
+    rdfs:label xsd:string;
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Protein_Existence ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-26cb74a8dcc53bd69d239adb54cf9cb4> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Tissue_Specificity_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-9e2e8496ae88c482c6265ddae823cab6> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:label xsd:string;
+    rdf:type  [ up:Organelle ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-6be100d081a438502013ba4e5fef3db7> {
+    rdfs:isDefinedBy { rdf:type  [ owl:Ontology ] };
+    rdfs:comment xsd:string;
+    owl:intersectionOf .;
+    rdfs:label xsd:string;
+    owl:unionOf .;
+    owl:deprecated xsd:boolean;
+    owl:disjointWith { rdf:type  [ owl:Class ] };
+    rdfs:seeAlso { rdf:type  [ owl:Class ] };
+    owl:equivalentClass {  };
+    <http://purl.org/vocab/vann/exaple> .;
+    owl:oneOf .;
+    rdfs:subClassOf {  };
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-aa0b4a3ac50078c1d962a2689f7201d5> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Disruption_Phenotype_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_taxonomy-shape-dfeaa076c456882174ca4ec99ed8d070> {
+    up:name xsd:string;
+    rdf:type  [ up:Strain ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-cf5df24016e1127c34310613cef7d3db> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Domain_Extent_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-940b17962eb013e41b2e5f6cdbc9769a> {
+    up:maximum xsd:int;
+    up:certain xsd:boolean;
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Absorption_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_go-shape-6be100d081a438502013ba4e5fef3db7> {
+    rdfs:subClassOf {  };
+    <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> xsd:string;
+    rdfs:label xsd:string;
+    <http://purl.obolibrary.org/obo/IAO_0000115> xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#replaces> { rdf:type  [ owl:Class ] };
+    <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> xsd:string;
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_enzymes-shape-baab8c67b755f7c92090209d30a29ed4> {
+    up:replaces { rdf:type  [ up:Enzyme ] };
+    rdfs:subClassOf { rdf:type  [ up:Enzyme ] };
+    <http://www.w3.org/2004/02/skos/core#prefLabel> xsd:string;
+    up:obsolete xsd:boolean;
+    <http://www.w3.org/2004/02/skos/core#broaderTransitive> { rdf:type  [ up:Enzyme ] };
+    up:replacedBy { rdf:type  [ up:Enzyme ] };
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    rdfs:comment xsd:string;
+    up:activity { rdf:type  [ up:Catalytic_Activity ] };
+    up:citation { rdf:type  [ up:Citation ] };
+    <http://www.w3.org/2004/02/skos/core#narrowerTransitive> { rdf:type  [ up:Enzyme ] };
+    rdf:type  [ up:Enzyme ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-beed3c2ba66dec9abdf4d331124d5786> {
+    up:author xsd:string;
+    up:group xsd:string;
+    up:title xsd:string;
+    up:date xsd:date;
+    rdf:type  [ up:Observation_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-81e6dc72cafed42a6ba572f6f759140e> {
+    up:component { rdf:type  [ up:Part ] };
+    up:enzyme .;
+    up:sequence {  };
+    up:modified xsd:date;
+    up:domain { rdf:type  [ up:Part ] };
+    up:existence .;
+    up:alternativeName { rdf:type  [ up:Structured_Name ] };
+    up:reviewed xsd:boolean;
+    up:attribution .;
+    up:encodedIn { rdf:type  [ up:Plasmid ] };
+    up:submittedName { rdf:type  [ up:Structured_Name ] };
+    up:oldMnemonic xsd:string;
+    up:potentialSequence {  };
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    up:organism .;
+    up:proteome .;
+    up:recommendedName { rdf:type  [ up:Structured_Name ] };
+    up:mnemonic xsd:string;
+    up:created xsd:date;
+    up:interaction {  };
+    up:complete xsd:boolean;
+    up:classifiedWith .;
+    up:version xsd:int;
+    rdfs:seeAlso {  };
+    up:isolatedFrom { rdf:type  [ up:Tissue ] };
+    up:encodedBy { rdf:type  [ up:Gene ] };
+    up:annotation {  };
+    up:replaces .;
+    up:citation {  };
+    rdf:type  [ up:Protein ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniparc-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-17821ba21bbc7a6a3750544bd04ae21b> {
+    rdfs:comment xsd:string;
+    up:sequence { rdf:type  [ up:Modified_Sequence ] };
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Disulfide_Bond_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-b91777470c025260b15c204c6561f495> {
+    <http://biohackathon.org/resource/faldo#begin> {  };
+    <http://biohackathon.org/resource/faldo#end> {  };
+    rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_core-shape-e70106cf33c4a8d55f7031297af9b64e> {
+    owl:oneOf { rdf:type  [ rdf:List ] };
+    rdf:type  [ rdfs:Datatype ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-36985cd5a5d275a1e69fd510e8a7680a> {
+    rdfs:comment xsd:int;
+    rdfs:label xsd:string;
+    rdf:type  [ <http://purl.obolibrary.org/obo/STATO_0000193> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-9b09b153a080dba5fd355e0793d3d69a> {
+    up:xeno xsd:boolean;
+    up:experiments xsd:int;
+    up:participant { rdf:type  [ up:Participant ] };
+    rdf:type  [ up:Self_Interaction ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-fe1192498fea159676d9b35284dbfc7c> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Subunit_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-c05c1d2f52c6be3e33f066d767a5c687> {
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Beta_Strand_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_journal-shape-c4d1dce9770bb4d4abb4c342e7aa69b5> {
+    up:shortCoden xsd:string;
+    <http://purl.org/ontology/bibo/shortTitle> xsd:string;
+    rdfs:comment xsd:string;
+    <http://purl.org/ontology/bibo/title> xsd:string;
+    dct:publisher xsd:string;
+    rdfs:seeAlso .;
+    <http://purl.org/ontology/bibo/issn> xsd:string;
+    <http://purl.org/ontology/bibo/eissn> xsd:string;
+    <http://purl.org/ontology/bibo/coden> xsd:string;
+    <http://www.w3.org/2004/02/skos/core#exactMatch> .;
+    <http://www.w3.org/2004/02/skos/core#closeMatch> .;
+    rdf:type  [ <http://purl.org/ontology/bibo/Journal> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-ca9c3e2a01ae3746d5b8aa82a12679dd> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:Activity_Regulation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-a093af1caacd11ea5f1cac09da3f805b> {
+    rdfs:seeAlso .;
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Proteome_Component ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-a902e247197f376b05c99c931c766369> {
+    up:catalyticActivity { rdf:type  [ up:Catalytic_Activity ] };
+    up:sequence {  };
+    up:catalyzedPhysiologicalReaction .;
+    rdf:type  [ up:Catalytic_Activity_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_locations-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_proteomes-shape-05695744908e13f158a50c6fb97f462f> {
+    <http://busco.ezlab.org/schema#completeMulti> xsd:int;
+    <http://busco.ezlab.org/schema#fragmented> xsd:int;
+    <http://busco.ezlab.org/schema#missing> xsd:int;
+    <http://busco.ezlab.org/schema#complete> xsd:int;
+    <http://busco.ezlab.org/schema#completeSingle> xsd:int;
+    <http://busco.ezlab.org/schema#referenceDataset> xsd:string;
+    rdf:type  [ <http://busco.ezlab.org/schema#Score> ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_citations-shape-548cd606e266d96a93dfa3bf04dfcb76> {
+    up:place xsd:string;
+    up:date xsd:date;
+    up:title xsd:string;
+    up:author xsd:string;
+    up:institution xsd:string;
+    rdf:type  [ up:Thesis_Citation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-5787c183698dabcbe3fb0297e94d561c> {
+    rdfs:label xsd:string;
+    rdf:type  [ up:Tissue ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-f4c4cea1ff4625ae4d0170e2d7f95eb5> {
+    up:conflictingSequence { rdf:type  [ up:External_Sequence ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Erroneous_Translation_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_pathways-shape-2081af8c45b177ab33633bc66cba1ab2> {
+    rdfs:subClassOf { rdf:type  [ up:Pathway ] };
+    rdfs:label xsd:string;
+    <http://www.w3.org/2004/02/skos/core#narrower> { rdf:type  [ up:Pathway ] };
+    rdf:type  [ up:Pathway ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-51fde6b603c4bdb87cf5ab7596b81875> {
+    up:sequence { rdf:type  [ up:Chain_Annotation ] };
+    rdfs:comment xsd:string;
+    rdf:type  [ up:Allergen_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-3772236379da94aa16944dd3f19afb43> {
+    rdfs:comment xsd:string;
+    up:range { rdf:type  [ <http://biohackathon.org/resource/faldo#Region> ] };
+    rdf:type  [ up:Repeat_Annotation ]
+}
+<https://sparql.uniprot.org/.well-known/void#_graph_uniprot-shape-94cdd44af4502314dd0b578d6b5988a9> {
+    rdfs:comment xsd:string;
+    up:sequence {  };
+    rdf:type  [ up:PH_Dependence_Annotation ]
+}

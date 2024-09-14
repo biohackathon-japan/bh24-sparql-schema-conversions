@@ -1,0 +1,106 @@
+prefix void:	 <http://rdfs.org/ns/void#>
+prefix dash:     <http://datashapes.org/dash#> 
+prefix dcat:     <http://www.w3.org/ns/dcat#> 
+prefix dct:      <http://purl.org/dc/terms/> 
+prefix sh:       <http://www.w3.org/ns/shacl#> 
+prefix void_ext: <http://ldf.fi/void-ext#>
+prefix up: 	 <http://purl.uniprot.org/core/>
+prefix rdf: 	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> 
+prefix sd:	 <http://www.w3.org/ns/sparql-service-description#>
+
+CONSTRUCT {
+	?shape a sh:NodeShape ;
+		dct:title ?shapeGraphLabel ;
+		sh:targetClass ?class ;
+		sh:property ?shProperty .
+	?shProperty a sh:PropertyShape ;
+		sh:path ?property ;
+		sh:datatype ?datatype ;
+		sh:class ?propertyClassSingle ;
+		sh:minCount ?minDtCardinality ;
+		sh:maxCount ?maxDtCardinality ;
+		sh:or ?firstPropertyClassListItem .
+	?currentPropertyClassListItem a rdf:List ;
+		rdf:first ?currentPropertyClassListValue ;
+		rdf:rest ?nextPropertyClassListItem .
+?currentPropertyClassListValue sh:path ?propertyForList ; 
+			    sh:class ?propertyClass .
+	?lastPropertyClassListItem a rdf:List ;
+		rdf:first [ sh:class ?propertyClassLast; sh:path ?propertyForList ] ;
+		rdf:rest rdf:nil .
+} WHERE {
+	?ns sd:graph ?ng .
+	?ns dct:title ?graphTitle .
+	?ng void:classPartition ?cp .
+	?cp void:class ?class .
+	BIND(IRI(CONCAT(STR(?ng),'-shape-',MD5(STR(?class)))) AS ?shape) .
+	?cp void:propertyPartition ?pp .
+	?pp void:property ?property .
+	BIND(BNODE() AS ?shProperty)
+	#BIND(CONCAT(?graphTitle,'-',?property) AS ?shapeGraphLabel)
+	OPTIONAL {
+		# ask for the datatype property
+		?pp void_ext:datatypePartition ?dp .
+		?dp void_ext:datatype ?datatype .
+	}
+	OPTIONAL {
+		# if the subject count is the same as the object count then it is very likely
+		# that the cardinality is 1:1
+		?cp void_ext:distinctIRIReferenceSubjects ?distinctSubjectIri .
+		?pp void:triples ?dtTriples .
+		FILTER(?dtTriples = ?distinctSubjectIri)
+		BIND(1 AS ?minDtCardinality)
+		BIND(1 AS ?maxDtCardinality)
+	}
+	OPTIONAL {
+		# If there is just one class property we can use sh:in without a list.
+		{
+			SELECT ?ng ?cp ?property (SAMPLE(?propertyClass) AS ?propertyClassSingle)
+			WHERE {	
+				?ng void:classPartition ?cp .
+				?cp void:propertyPartition ?pp .
+				?pp void:property ?property .
+				?pp void:classPartition ?ppcp .
+				?ppcp void:class ?propertyClass .
+			} GROUP BY ?ng ?cp ?property HAVING (COUNT(DISTINCT ?propertyClass) = 1)
+		}
+	}
+	OPTIONAL {
+		# If there is no single value for a property class we generate a list.
+		# First we take the first and last elements for the list
+		FILTER(! BOUND(?propertyClassSingle))
+		{
+				SELECT ?ng ?cp ?pp ?property (MIN(?propertyClass) AS ?propertyClassFirst) (MAX(?propertyClass) AS ?propertyClassLast)
+				WHERE {	
+					?ng void:classPartition ?cp .
+					?cp void:propertyPartition ?pp .
+					?pp void:property ?property .
+					?pp void:classPartition ?ppcp .
+					?ppcp void:class ?propertyClass .
+				} GROUP BY ?ng ?cp ?pp ?property
+		}
+		# Then the first again and all that follow except the last.
+		{
+			SELECT ?ng ?cp ?property ?pp ?propertyClass (MIN(?propertyClass2) AS ?minClass)
+			WHERE {	
+				?ng void:classPartition ?cp .
+				?cp void:propertyPartition ?pp .
+				?pp void:property ?property .
+				?pp void:classPartition ?ppcp , ?ppcp2 .
+				?ppcp void:class ?propertyClass .
+				?ppcp2 void:class ?propertyClass2 .
+				# This filter makes sure we don't select the last and that the min is not the same as the class we are looking at.
+				FILTER(STR(?propertyClass2) > STR(?propertyClass))
+			} GROUP BY ?ng ?cp ?pp ?property ?propertyClass
+		}
+		# We bind into stable IRIs.
+		BIND(?property AS ?propertyForList)
+		BIND(IRI(CONCAT(STR(?ng), '-or-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?propertyClassFirst))))) AS ?firstPropertyClassOr)
+		BIND(IRI(CONCAT(STR(?ng), '-li-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?propertyClassFirst))))) AS ?firstPropertyClassListItem)
+		BIND(IRI(CONCAT(STR(?ng), '-li-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?propertyClass))))) AS ?currentPropertyClassListItem)
+		BIND(IRI(CONCAT(STR(?ng), '-va-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?propertyClass))))) AS ?currentPropertyClassListValue)
+		BIND(IRI(CONCAT(STR(?ng), '-li-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?minClass))))) AS ?nextPropertyClassListItem)
+		BIND(IRI(CONCAT(STR(?ng), '-li-',MD5(CONCAT(STR(?cp),STR(?pp),STR(?propertyClassLast))))) AS ?lastPropertyClassListItem)
+	}
+}

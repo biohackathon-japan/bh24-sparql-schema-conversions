@@ -1,0 +1,139 @@
+{
+  "shapes": [
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Service"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/sparql-service-description#endpoint",
+        "http://www.w3.org/ns/sparql-service-description#feature",
+        "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+        "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+        "http://www.w3.org/ns/sparql-service-description#resultFormat"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#DatatypeProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Graph"
+      ],
+      "predicates": [
+        "http://purl.org/dc/terms/issued",
+        "http://rdfs.org/ns/void#classes",
+        "http://rdfs.org/ns/void#propertyPartition",
+        "http://rdfs.org/ns/void#classPartition",
+        "http://ldf.fi/void-ext#distinctIRIReferenceSubjects",
+        "http://purl.org/dc/terms/title",
+        "http://rdfs.org/ns/void#distinctObjects",
+        "http://rdfs.org/ns/void#triples",
+        "http://ldf.fi/void-ext#distinctBlankNodeSubjects",
+        "http://ldf.fi/void-ext#distinctIRIReferenceObjects",
+        "http://purl.org/dc/terms/license",
+        "http://rdfs.org/ns/void#distinctSubjects",
+        "http://ldf.fi/void-ext#distinctLiterals"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2000/01/rdf-schema#domain"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/ns/shacl#declare",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Class"
+      ],
+      "predicates": [
+        "http://purl.obolibrary.org/obo/chebi/formula",
+        "http://www.w3.org/2002/07/owl#equivalentClass",
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "https://swisslipids.org/rdf/SLM_rank",
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "https://swisslipids.org/rdf/SLM_hasPart",
+        "https://swisslipids.org/rdf/SLM_rankPreference",
+        "http://purl.obolibrary.org/obo/chebi/inchi",
+        "http://purl.obolibrary.org/obo/chebi/smiles",
+        "http://xmlns.com/foaf/0.1/depiction",
+        "http://www.w3.org/2004/02/skos/core#altLabel",
+        "https://swisslipids.org/rdf/SLM_citation",
+        "http://semanticscience.org/resource/CHEMINF_000412",
+        "http://purl.obolibrary.org/obo/chebi/charge",
+        "http://purl.obolibrary.org/obo/chebi/inchikey",
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/sparql-service-description#Dataset"
+      ],
+      "predicates": [
+        "http://purl.org/pav/version",
+        "http://purl.org/dc/terms/issued",
+        "http://www.w3.org/ns/sparql-service-description#namedGraph",
+        "http://www.w3.org/ns/sparql-service-description#defaultGraph"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLExecutable"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "https://schema.org/target",
+        "http://www.w3.org/ns/shacl#prefixes",
+        "http://www.w3.org/ns/shacl#select"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/2002/07/owl#Ontology"
+      ],
+      "predicates": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ]
+    },
+    {
+      "class": [
+        "http://www.w3.org/ns/shacl#SPARQLSelectExecutable"
+      ],
+      "predicates": [
+        "http://www.w3.org/2000/01/rdf-schema#label",
+        "http://www.w3.org/ns/shacl#prefixes",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+        "http://www.w3.org/ns/shacl#select",
+        "https://schema.org/target"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+prefix sd: <http://www.w3.org/ns/sparql-service-description#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dash: <http://datashapes.org/dash#>
+prefix dct: <http://purl.org/dc/terms/>
+prefix void: <http://rdfs.org/ns/void#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix void_ext: <http://ldf.fi/void-ext#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix pav: <http://purl.org/pav/>
+prefix up: <http://purl.uniprot.org/core/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sh: <http://www.w3.org/ns/shacl#>
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-cf0228a016dacbaa5cc8bcf3fb044cd5> {
+    sd:endpoint { rdf:type  [ sd:Service ] };
+    sd:feature .;
+    sd:defaultDataset { rdf:type  [ sd:Dataset ] };
+    sd:supportedLanguage .;
+    sd:resultFormat .;
+    rdf:type  [ sd:Service ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-9e6d9eddc19d6811c0a885c828aceb63> {
+    rdfs:label xsd:string;
+    rdf:type  [ owl:DatatypeProperty ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-7cb4e6a45cb6e9b5d1e8ea459192da1b> {
+    dct:issued xsd:date;
+    void:classes xsd:long;
+    void:propertyPartition .;
+    void:classPartition .;
+    void_ext:distinctIRIReferenceSubjects xsd:long;
+    dct:title xsd:string;
+    void:distinctObjects xsd:long;
+    void:triples xsd:long;
+    void_ext:distinctBlankNodeSubjects xsd:long;
+    void_ext:distinctIRIReferenceObjects xsd:long;
+    dct:license .;
+    void:distinctSubjects xsd:long;
+    void_ext:distinctLiterals xsd:long;
+    rdf:type  [ sd:Graph ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-55439a5d90df8ccad534dc9af3fc4aee> {
+    rdfs:label xsd:string;
+    rdf:type  [ owl:AnnotationProperty ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-472ee8b9e92f00863f1b11929967a7fa> {
+    rdfs:comment xsd:string;
+    rdfs:domain { rdf:type  [ owl:Class ] };
+    rdf:type  [ owl:ObjectProperty ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-89df24df35df8882616112ab6a78df83> {
+    sh:declare .;
+    rdfs:comment xsd:string;
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-6be100d081a438502013ba4e5fef3db7> {
+    <http://purl.obolibrary.org/obo/chebi/formula> xsd:string;
+    owl:equivalentClass .;
+    rdfs:seeAlso .;
+    <https://swisslipids.org/rdf/SLM_rank> { rdf:type  [ owl:Class ] };
+    rdfs:label xsd:string;
+    <http://www.geneontology.org/formats/oboInOwl#hasDbXref> .;
+    rdfs:subClassOf { rdf:type  [ owl:Class ] };
+    <https://swisslipids.org/rdf/SLM_hasPart> .;
+    <https://swisslipids.org/rdf/SLM_rankPreference> xsd:integer;
+    <http://purl.obolibrary.org/obo/chebi/inchi> xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/smiles> xsd:string;
+    foaf:depiction .;
+    <http://www.w3.org/2004/02/skos/core#altLabel> xsd:string;
+    <https://swisslipids.org/rdf/SLM_citation> .;
+    <http://semanticscience.org/resource/CHEMINF_000412> xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/charge> xsd:string;
+    <http://purl.obolibrary.org/obo/chebi/inchikey> xsd:string;
+    rdfs:comment xsd:string;
+    rdf:type  [ owl:Class ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_void-shape-d3504b7574b31cc49e6f7934d893a8f9> {
+    pav:version xsd:string;
+    dct:issued xsd:date;
+    sd:namedGraph .;
+    sd:defaultGraph { rdf:type  [ sd:Graph ] };
+    rdf:type  [ sd:Dataset ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-ccf949e9924a56ac982c5d08c823f910> {
+    rdfs:label rdf:langString;
+    rdfs:comment rdf:langString;
+    <https://schema.org/target> .;
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    sh:select xsd:string;
+    rdf:type  [ sh:SPARQLExecutable ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_swisslipids-shape-89df24df35df8882616112ab6a78df83> {
+    owl:imports .;
+    rdf:type  [ owl:Ontology ]
+}
+<https://sparql.swisslipids.org/.well-known/void#_graph_sparql-examples-shape-d913cb6cc297b2920440b7292b53c7c6> {
+    rdfs:label rdf:langString;
+    sh:prefixes { rdf:type  [ owl:Ontology ] };
+    rdfs:comment rdf:langString;
+    sh:select xsd:string;
+    <https://schema.org/target> .;
+    rdf:type  [ sh:SPARQLSelectExecutable ]
+}
