@@ -25,7 +25,7 @@ prefix formats: <http://www.w3.org/ns/formats/>
     sd:defaultGraph @:DefaultGraph ;
     pav:version xsd:string ;
     dcterms:issued xsd:date ;
-    sd:namedGraph @:Graph *
+    sd:namedGraph @:NamedGraph *
 }
 
 :DefaultGraph IRI {
@@ -35,11 +35,41 @@ prefix formats: <http://www.w3.org/ns/formats/>
     dcterms:issued xsd:date 
 }
 
-:Graph {
-    sd:graph @:Void ;
+:NamedGraph {
+    sd:graph @:Graph ;
     sd:name IRI ;
     dcterms:title xsd:string ;
+    dcterms:creator . * ;
+    dcterms:publisher . * ; 
     void:vocabulary IRI *
 }
 
-:Void {}
+:Graph {
+    a [ sd:Graph ] ;
+    void:triples xsd:long ;
+    dcterms:license IRI ;
+    void:classes xsd:long ;
+    void:classPartitiion @:ClassPartition * ;
+    void:propertyPartition @:PropertyPartition * ;
+    void:distinctObjects xsd:long ;
+    void:distinctSubjects xsd:long ;
+    void_ext:distinctLiterals xsd:long ;
+    void_ext:distinctIRIReferenceObjects xsd:long ;
+}
+
+:ClassPartition {
+    void:class @:VoidClass ;
+    void:propertyPartition @:PropertyPartition ;
+}
+
+:PropertyPartition {
+    void:property IRI ;
+    void:triples xsd:long ;
+    void_ext:datatypePartition @:DatatypePartition ?
+}
+
+:VoidClass {}
+:DatatypePartition {
+    void_ext:datatype IRI 
+}
+
